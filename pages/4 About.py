@@ -1,6 +1,7 @@
 import streamlit as st
 import base64
 st.set_page_config(layout="wide")
+st.sidebar.image("swara.png", use_column_width=True)
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
