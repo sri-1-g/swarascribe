@@ -2,7 +2,7 @@ import streamlit as st
 
 
 st.set_page_config(layout="wide")
-
+st.sidebar.image("swara.png", use_column_width=True)
 st.markdown("""
 <style>
 
