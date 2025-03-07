@@ -1,6 +1,7 @@
 import streamlit as st
 from raag_data import raags
 st.set_page_config(layout="wide")
+st.sidebar.image("swara.png", use_column_width=True)
 col1, col2, col3 = st.columns(3)
 
 with col2:
