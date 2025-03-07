@@ -454,8 +454,8 @@ if st.button("Analyze"):
             for fact in facts:
                 st.markdown(f"**{fact[0]}**: {fact[1]}")
 
-        else:
-            i1, i2 = st.columns(2)
+    else:
+        i1, i2 = st.columns(2)
 
         with i1:
             st.title("This song is in the ragam: Khamboji")
