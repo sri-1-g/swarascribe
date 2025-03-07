@@ -1,5 +1,6 @@
 import streamlit as st
 st.set_page_config(layout="wide")
+st.sidebar.image("swara.png", use_column_width=True)
 def main():
     st.title("FAQ - Carnatic Music Ragam Detection")
     st.write("Find answers to common questions about our ragam detection tool.")
