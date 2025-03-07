@@ -167,74 +167,74 @@ if st.button("Analyze"):
         with k1:
             st.title("This song is in the ragam: Kalyani")
 
-        st.write(''' **Arohana**: S R₂ G₃ M₂ P D₂ N₃ Ṡ  
-                    **Avarohana**: Ṡ N₃ D₂ P M₂ G₃ R₂ S''')
-
-        st.markdown("""
-        **Notes of Kalyani:**
-        - **S** (Shadjam)
-        - **R₂** (Chatushruti Rishabham)
-        - **G₃** (Antara Gandharam)
-        - **M₂** (Prati Madhyamam)
-        - **P** (Paṅchamam)
-        - **D₂** (Chatushruti Dhaivatam)
-        - **N₃** (Kakali Nishadam)
-        """)
-
-        # Title of the page
-        st.title("Janya Ragas of Kalyani")
-
-        # Display text with bullet points and emojis
-        st.markdown("""
-        Kalyani has given rise to numerous Janya (derived) ragas, each bringing unique flavors to Carnatic music. 
-        Some popular Janya ragas include:
-        - 🎶 **Hamir Kalyani**
-        - 🎶 **Yamunakalyani**
-        - 🎶 **Saranga**
-        - 🎶 **Mohana Kalyani**
-        - 🎶 **Sunadavinodini**
-        - 🎶 **Pantuvarali**
-        - 🎶 **Hamsanadam**
-        - 🎶 **Valsala**
-
-        These ragas reflect the versatility of Kalyani and its melodic richness.
-        """)
-
-        with st.form("my_form"):
-            st.write("Feedback - Was I Right?")
-            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-            selected = st.feedback("thumbs")
-            if selected is not None:
-                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-            # Every form must have a submit button.
-            submitted = st.form_submit_button("Submit")
+            st.write(''' **Arohana**: S R₂ G₃ M₂ P D₂ N₃ Ṡ  
+                        **Avarohana**: Ṡ N₃ D₂ P M₂ G₃ R₂ S''')
+    
+            st.markdown("""
+            **Notes of Kalyani:**
+            - **S** (Shadjam)
+            - **R₂** (Chatushruti Rishabham)
+            - **G₃** (Antara Gandharam)
+            - **M₂** (Prati Madhyamam)
+            - **P** (Paṅchamam)
+            - **D₂** (Chatushruti Dhaivatam)
+            - **N₃** (Kakali Nishadam)
+            """)
+    
+            # Title of the page
+            st.title("Janya Ragas of Kalyani")
+    
+            # Display text with bullet points and emojis
+            st.markdown("""
+            Kalyani has given rise to numerous Janya (derived) ragas, each bringing unique flavors to Carnatic music. 
+            Some popular Janya ragas include:
+            - 🎶 **Hamir Kalyani**
+            - 🎶 **Yamunakalyani**
+            - 🎶 **Saranga**
+            - 🎶 **Mohana Kalyani**
+            - 🎶 **Sunadavinodini**
+            - 🎶 **Pantuvarali**
+            - 🎶 **Hamsanadam**
+            - 🎶 **Valsala**
+    
+            These ragas reflect the versatility of Kalyani and its melodic richness.
+            """)
+    
+            with st.form("my_form"):
+                st.write("Feedback - Was I Right?")
+                sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+                selected = st.feedback("thumbs")
+                if selected is not None:
+                    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+                # Every form must have a submit button.
+                submitted = st.form_submit_button("Submit")
 
         with k2:
             st.image("spec.png")
 
-        st.title('Fun Facts About Kalyani')
-
-        # Add an introductory text
-        st.markdown("""
-        Kalyani is one of the most celebrated ragas in Carnatic music, renowned for its elegance and grandeur. Here are some interesting facts about this raga:
-        """)
-
-        # List of facts
-        facts = [
-            ("🎵 **Melakarta Raga**", "It is the 65th raga in the 72 Melakarta system and belongs to the Prathi Madhyama group."),
-            ("🔢 **Sampurna Scale**", "Kalyani employs all seven notes in both ascending and descending scales: S, R₂, G₃, M₂, P, D₂, N₃."),
-            ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is G₃ (Antara Gandharam), and the Samvadi is N₃ (Kakali Nishadam)."),
-            ("🌅 **Time of Performance**", "Typically performed in the evening, evoking devotion and joy."),
-            ("🎤 **Famous Compositions**", "Kalyani is known for iconic compositions like 'Nidhi Chala Sukhama' by Tyagaraja."),
-            ("💎 **Name Meaning**", "Kalyani translates to 'auspicious' or 'beneficent.'"),
-            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman."),
-            ("🩷 **Emotional Range**", "Kalyani conveys grandeur, devotion, and serenity."),
-            ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, showcasing its adaptability."),
-        ]
-
-        # Loop through the list and present each fact
-        for fact in facts:
-            st.markdown(f"**{fact[0]}**: {fact[1]}")
+            st.title('Fun Facts About Kalyani')
+    
+            # Add an introductory text
+            st.markdown("""
+            Kalyani is one of the most celebrated ragas in Carnatic music, renowned for its elegance and grandeur. Here are some interesting facts about this raga:
+            """)
+    
+            # List of facts
+            facts = [
+                ("🎵 **Melakarta Raga**", "It is the 65th raga in the 72 Melakarta system and belongs to the Prathi Madhyama group."),
+                ("🔢 **Sampurna Scale**", "Kalyani employs all seven notes in both ascending and descending scales: S, R₂, G₃, M₂, P, D₂, N₃."),
+                ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is G₃ (Antara Gandharam), and the Samvadi is N₃ (Kakali Nishadam)."),
+                ("🌅 **Time of Performance**", "Typically performed in the evening, evoking devotion and joy."),
+                ("🎤 **Famous Compositions**", "Kalyani is known for iconic compositions like 'Nidhi Chala Sukhama' by Tyagaraja."),
+                ("💎 **Name Meaning**", "Kalyani translates to 'auspicious' or 'beneficent.'"),
+                ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman."),
+                ("🩷 **Emotional Range**", "Kalyani conveys grandeur, devotion, and serenity."),
+                ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, showcasing its adaptability."),
+            ]
+    
+            # Loop through the list and present each fact
+            for fact in facts:
+                st.markdown(f"**{fact[0]}**: {fact[1]}")
     elif prediction=="Bhairavi":
 
         j1, j2 = st.columns(2)
@@ -242,71 +242,71 @@ if st.button("Analyze"):
         with j1:
             st.title("This song is in the ragam: Bhairavi")
 
-        st.write(''' **Arohana**: S R₂ G₂ M₁ P D₂ N₂ Ṡ  
-                    **Avarohana**: Ṡ N₂ D₂ P M₁ G₂ R₂ S''')
-
-        st.markdown("""
-        **Notes of Bhairavi:**
-        - **S** (Shadjam)
-        - **R₂** (Chatushruti Rishabham)
-        - **G₂** (Sadharana Gandharam)
-        - **M₁** (Shuddha Madhyamam)
-        - **P** (Paṅchamam)
-        - **D₂** (Chatushruti Dhaivatam)
-        - **N₂** (Kaishiki Nishadam)
-        """)
-
-        # Title of the page
-        st.title("Janya Ragas of Bhairavi")
-
-        # Display text with bullet points and emojis
-        st.markdown("""
-        Bhairavi has given rise to numerous Janya (derived) ragas, each showcasing its emotive beauty. 
-        Some popular Janya ragas include:
-        - 🎶 **Manji**
-        - 🎶 **Mukhari**
-        - 🎶 **Huseni**
-        - 🎶 **Owdava Bhairavi**
-        - 🎶 **Sindhubhairavi**
-
-        These ragas highlight Bhairavi's adaptability and emotional depth.
-        """)
-
-        with st.form("my_form"):
-            st.write("Feedback - Was I Right?")
-            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-            selected = st.feedback("thumbs")
-            if selected is not None:
-                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-            # Every form must have a submit button.
-            submitted = st.form_submit_button("Submit")
+            st.write(''' **Arohana**: S R₂ G₂ M₁ P D₂ N₂ Ṡ  
+                        **Avarohana**: Ṡ N₂ D₂ P M₁ G₂ R₂ S''')
+    
+            st.markdown("""
+            **Notes of Bhairavi:**
+            - **S** (Shadjam)
+            - **R₂** (Chatushruti Rishabham)
+            - **G₂** (Sadharana Gandharam)
+            - **M₁** (Shuddha Madhyamam)
+            - **P** (Paṅchamam)
+            - **D₂** (Chatushruti Dhaivatam)
+            - **N₂** (Kaishiki Nishadam)
+            """)
+    
+            # Title of the page
+            st.title("Janya Ragas of Bhairavi")
+    
+            # Display text with bullet points and emojis
+            st.markdown("""
+            Bhairavi has given rise to numerous Janya (derived) ragas, each showcasing its emotive beauty. 
+            Some popular Janya ragas include:
+            - 🎶 **Manji**
+            - 🎶 **Mukhari**
+            - 🎶 **Huseni**
+            - 🎶 **Owdava Bhairavi**
+            - 🎶 **Sindhubhairavi**
+    
+            These ragas highlight Bhairavi's adaptability and emotional depth.
+            """)
+    
+            with st.form("my_form"):
+                st.write("Feedback - Was I Right?")
+                sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+                selected = st.feedback("thumbs")
+                if selected is not None:
+                    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+                # Every form must have a submit button.
+                submitted = st.form_submit_button("Submit")
 
         with j2:
             st.image("spec.png")
 
-        st.title('Fun Facts About Bhairavi')
-
-        # Add an introductory text
-        st.markdown("""
-        Bhairavi is one of the most expressive and versatile ragas in Carnatic music, embodying deep emotion and devotion. Here are some interesting facts about this raga:
-        """)
-
-        # List of facts
-        facts = [
-            ("🎵 **Melakarta Raga**", "Bhairavi is not a Melakarta but a Bhashanga raga, incorporating both anya swaras and traditional Carnatic notes."),
-            ("🔢 **Sampurna Scale**", "It employs all seven notes in its scale but can incorporate anya swaras like Suddha Dhaivatam in certain compositions."),
-            ("🎶 **Vadi and Samvadi**", "The Vadi is M₁ (Shuddha Madhyamam), and the Samvadi is S (Shadjam)."),
-            ("🌅 **Time of Performance**", "Typically performed in the morning or early evening, evoking devotion and pathos."),
-            ("🎤 **Famous Compositions**", "Iconic compositions include 'Upacharamulanu' by Tyagaraja and 'Viriboni' by Pacchimiriam Adiyappa."),
-            ("💎 **Name Meaning**", "Bhairavi signifies 'fierce goddess,' often associated with intense devotion."),
-            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Bhairavi (though it differs in scale usage)."),
-            ("🩷 **Emotional Range**", "Bhairavi conveys devotion, pathos, and introspection."),
-            ("🎻 **Vocal and Instrumental**", "Highly favored in both vocal and instrumental renditions, emphasizing its versatility."),
-        ]
-
-        # Loop through the list and present each fact
-        for fact in facts:
-            st.markdown(f"**{fact[0]}**: {fact[1]}")
+            st.title('Fun Facts About Bhairavi')
+    
+            # Add an introductory text
+            st.markdown("""
+            Bhairavi is one of the most expressive and versatile ragas in Carnatic music, embodying deep emotion and devotion. Here are some interesting facts about this raga:
+            """)
+    
+            # List of facts
+            facts = [
+                ("🎵 **Melakarta Raga**", "Bhairavi is not a Melakarta but a Bhashanga raga, incorporating both anya swaras and traditional Carnatic notes."),
+                ("🔢 **Sampurna Scale**", "It employs all seven notes in its scale but can incorporate anya swaras like Suddha Dhaivatam in certain compositions."),
+                ("🎶 **Vadi and Samvadi**", "The Vadi is M₁ (Shuddha Madhyamam), and the Samvadi is S (Shadjam)."),
+                ("🌅 **Time of Performance**", "Typically performed in the morning or early evening, evoking devotion and pathos."),
+                ("🎤 **Famous Compositions**", "Iconic compositions include 'Upacharamulanu' by Tyagaraja and 'Viriboni' by Pacchimiriam Adiyappa."),
+                ("💎 **Name Meaning**", "Bhairavi signifies 'fierce goddess,' often associated with intense devotion."),
+                ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Bhairavi (though it differs in scale usage)."),
+                ("🩷 **Emotional Range**", "Bhairavi conveys devotion, pathos, and introspection."),
+                ("🎻 **Vocal and Instrumental**", "Highly favored in both vocal and instrumental renditions, emphasizing its versatility."),
+            ]
+    
+            # Loop through the list and present each fact
+            for fact in facts:
+                st.markdown(f"**{fact[0]}**: {fact[1]}")
 
     elif prediction=="Kharaharapriya":
 
@@ -316,71 +316,71 @@ if st.button("Analyze"):
         with b1:
             st.title("This song is in the ragam: Kharaharapriya")
 
-        st.write(''' **Arohana**: S R₂ G₂ M₁ P D₂ N₂ Ṡ  
-                    **Avarohana**: Ṡ N₂ D₂ P M₁ G₂ R₂ S''')
-
-        st.markdown("""
-        **Notes of Kharaharapriya:**
-        - **S** (Shadjam)
-        - **R₂** (Chatushruti Rishabham)
-        - **G₂** (Sadharana Gandharam)
-        - **M₁** (Shuddha Madhyamam)
-        - **P** (Paṅchamam)
-        - **D₂** (Chatushruti Dhaivatam)
-        - **N₂** (Kaishiki Nishadam)
-        """)
-
-        # Title of the page
-        st.title("Janya Ragas of Kharaharapriya")
-
-        # Display text with bullet points and emojis
-        st.markdown("""
-        Kharaharapriya has given rise to numerous Janya (derived) ragas, each showcasing its melodic richness. 
-        Some popular Janya ragas include:
-        - 🎶 **Abhogi**
-        - 🎶 **Shuddha Dhanyasi**
-        - 🎶 **Dhenuka**
-        - 🎶 **Kanada**
-        - 🎶 **Kapi**
-
-        These ragas highlight Kharaharapriya's adaptability and emotive depth.
-        """)
-
-        with st.form("my_form"):
-            st.write("Feedback - Was I Right?")
-            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-            selected = st.feedback("thumbs")
-            if selected is not None:
-                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-            # Every form must have a submit button.
-            submitted = st.form_submit_button("Submit")
+            st.write(''' **Arohana**: S R₂ G₂ M₁ P D₂ N₂ Ṡ  
+                        **Avarohana**: Ṡ N₂ D₂ P M₁ G₂ R₂ S''')
+    
+            st.markdown("""
+            **Notes of Kharaharapriya:**
+            - **S** (Shadjam)
+            - **R₂** (Chatushruti Rishabham)
+            - **G₂** (Sadharana Gandharam)
+            - **M₁** (Shuddha Madhyamam)
+            - **P** (Paṅchamam)
+            - **D₂** (Chatushruti Dhaivatam)
+            - **N₂** (Kaishiki Nishadam)
+            """)
+    
+            # Title of the page
+            st.title("Janya Ragas of Kharaharapriya")
+    
+            # Display text with bullet points and emojis
+            st.markdown("""
+            Kharaharapriya has given rise to numerous Janya (derived) ragas, each showcasing its melodic richness. 
+            Some popular Janya ragas include:
+            - 🎶 **Abhogi**
+            - 🎶 **Shuddha Dhanyasi**
+            - 🎶 **Dhenuka**
+            - 🎶 **Kanada**
+            - 🎶 **Kapi**
+    
+            These ragas highlight Kharaharapriya's adaptability and emotive depth.
+            """)
+    
+            with st.form("my_form"):
+                st.write("Feedback - Was I Right?")
+                sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+                selected = st.feedback("thumbs")
+                if selected is not None:
+                    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+                # Every form must have a submit button.
+                submitted = st.form_submit_button("Submit")
 
         with b2:
             st.image("spec.png")
 
-        st.title('Fun Facts About Kharaharapriya')
-
-        # Add an introductory text
-        st.markdown("""
-        Kharaharapriya is one of the most melodically rich and expressive ragas in Carnatic music. Here are some interesting facts about this raga:
-        """)
-
-        # List of facts
-        facts = [
-            ("🎵 **Melakarta Raga**", "Kharaharapriya is the 22nd raga in the 72 Melakarta system."),
-            ("🔢 **Sampurna Scale**", "It employs all seven notes in both ascending and descending scales."),
-            ("🎶 **Vadi and Samvadi**", "The Vadi is G₂ (Sadharana Gandharam), and the Samvadi is N₂ (Kaishiki Nishadam)."),
-            ("🌅 **Time of Performance**", "Typically performed in the evening, evoking peace and introspection."),
-            ("🎤 **Famous Compositions**", "Iconic compositions include 'Chakkani Raja' by Tyagaraja and 'Rama Nee Samana' by Tyagaraja."),
-            ("💎 **Name Meaning**", "Kharaharapriya translates to 'The beloved of Kharahara.'"),
-            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Kafi."),
-            ("🩷 **Emotional Range**", "Kharaharapriya conveys peace, devotion, and introspection."),
-            ("🎻 **Vocal and Instrumental**", "Equally popular in vocal and instrumental renditions, emphasizing its versatility."),
-        ]
-
-        # Loop through the list and present each fact
-        for fact in facts:
-            st.markdown(f"**{fact[0]}**: {fact[1]}")
+            st.title('Fun Facts About Kharaharapriya')
+    
+            # Add an introductory text
+            st.markdown("""
+            Kharaharapriya is one of the most melodically rich and expressive ragas in Carnatic music. Here are some interesting facts about this raga:
+            """)
+    
+            # List of facts
+            facts = [
+                ("🎵 **Melakarta Raga**", "Kharaharapriya is the 22nd raga in the 72 Melakarta system."),
+                ("🔢 **Sampurna Scale**", "It employs all seven notes in both ascending and descending scales."),
+                ("🎶 **Vadi and Samvadi**", "The Vadi is G₂ (Sadharana Gandharam), and the Samvadi is N₂ (Kaishiki Nishadam)."),
+                ("🌅 **Time of Performance**", "Typically performed in the evening, evoking peace and introspection."),
+                ("🎤 **Famous Compositions**", "Iconic compositions include 'Chakkani Raja' by Tyagaraja and 'Rama Nee Samana' by Tyagaraja."),
+                ("💎 **Name Meaning**", "Kharaharapriya translates to 'The beloved of Kharahara.'"),
+                ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Kafi."),
+                ("🩷 **Emotional Range**", "Kharaharapriya conveys peace, devotion, and introspection."),
+                ("🎻 **Vocal and Instrumental**", "Equally popular in vocal and instrumental renditions, emphasizing its versatility."),
+            ]
+    
+            # Loop through the list and present each fact
+            for fact in facts:
+                st.markdown(f"**{fact[0]}**: {fact[1]}")
 
     elif prediction=="Todi"():
         a1, a2 = st.columns(2)
@@ -388,71 +388,71 @@ if st.button("Analyze"):
         with a1:
             st.title("This song is in the ragam: Todi")
 
-        st.write(''' **Arohana**: S R₁ G₂ M₁ P D₁ N₂ Ṡ  
-                    **Avarohana**: Ṡ N₂ D₁ P M₁ G₂ R₁ S''')
-
-        st.markdown("""
-        **Notes of Todi:**
-        - **S** (Shadjam)
-        - **R₁** (Shuddha Rishabham)
-        - **G₂** (Sadharana Gandharam)
-        - **M₁** (Shuddha Madhyamam)
-        - **P** (Paṅchamam)
-        - **D₁** (Shuddha Dhaivatam)
-        - **N₂** (Kaishiki Nishadam)
-        """)
-
-        # Title of the page
-        st.title("Janya Ragas of Todi")
-
-        # Display text with bullet points and emojis
-        st.markdown("""
-        Todi has given rise to numerous Janya (derived) ragas, each enriching the tapestry of Carnatic music. 
-        Some popular Janya ragas include:
-        - 🎶 **Subhapantuvarali**
-        - 🎶 **Jayamanohari**
-        - 🎶 **Deshkar**
-        - 🎶 **Bhairavi**
-        - 🎶 **Dhanyasi**
-
-        These ragas demonstrate Todi's deep emotional and melodic versatility.
-        """)
-
-        with st.form("my_form"):
-            st.write("Feedback - Was I Right?")
-            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-            selected = st.feedback("thumbs")
-            if selected is not None:
-                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-            # Every form must have a submit button.
-            submitted = st.form_submit_button("Submit")
+            st.write(''' **Arohana**: S R₁ G₂ M₁ P D₁ N₂ Ṡ  
+                        **Avarohana**: Ṡ N₂ D₁ P M₁ G₂ R₁ S''')
+    
+            st.markdown("""
+            **Notes of Todi:**
+            - **S** (Shadjam)
+            - **R₁** (Shuddha Rishabham)
+            - **G₂** (Sadharana Gandharam)
+            - **M₁** (Shuddha Madhyamam)
+            - **P** (Paṅchamam)
+            - **D₁** (Shuddha Dhaivatam)
+            - **N₂** (Kaishiki Nishadam)
+            """)
+    
+            # Title of the page
+            st.title("Janya Ragas of Todi")
+    
+            # Display text with bullet points and emojis
+            st.markdown("""
+            Todi has given rise to numerous Janya (derived) ragas, each enriching the tapestry of Carnatic music. 
+            Some popular Janya ragas include:
+            - 🎶 **Subhapantuvarali**
+            - 🎶 **Jayamanohari**
+            - 🎶 **Deshkar**
+            - 🎶 **Bhairavi**
+            - 🎶 **Dhanyasi**
+    
+            These ragas demonstrate Todi's deep emotional and melodic versatility.
+            """)
+    
+            with st.form("my_form"):
+                st.write("Feedback - Was I Right?")
+                sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+                selected = st.feedback("thumbs")
+                if selected is not None:
+                    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+                # Every form must have a submit button.
+                submitted = st.form_submit_button("Submit")
 
         with a2:
             st.image("spec.png")
 
-        st.title('Fun Facts About Todi')
-
-        # Add an introductory text
-        st.markdown("""
-        Todi is one of the most profound and evocative ragas in Carnatic music. Here are some interesting facts about this raga:
-        """)
-
-        # List of facts
-        facts = [
-            ("🎵 **Melakarta Raga**", "Todi is the 8th raga in the 72 Melakarta system."),
-            ("🔢 **Sampurna Scale**", "It employs all seven notes in both ascending and descending scales."),
-            ("🎶 **Vadi and Samvadi**", "The Vadi is G₂ (Sadharana Gandharam), and the Samvadi is D₁ (Shuddha Dhaivatam)."),
-            ("🌅 **Time of Performance**", "Traditionally performed in the morning, evoking devotion and seriousness."),
-            ("🎤 **Famous Compositions**", "Iconic compositions include 'Kaddanu Variki' by Tyagaraja and 'Gajavadana Sammodita' by Muthuswami Dikshitar."),
-            ("💎 **Name Meaning**", "Todi translates to 'to invoke' or 'to call out.'"),
-            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Bhairav."),
-            ("🩷 **Emotional Range**", "Todi conveys devotion, seriousness, and intensity."),
-            ("🎻 **Vocal and Instrumental**", "Renowned for its use in both vocal and instrumental renditions, emphasizing its expressive power."),
-        ]
-
-        # Loop through the list and present each fact
-        for fact in facts:
-            st.markdown(f"**{fact[0]}**: {fact[1]}")
+            st.title('Fun Facts About Todi')
+    
+            # Add an introductory text
+            st.markdown("""
+            Todi is one of the most profound and evocative ragas in Carnatic music. Here are some interesting facts about this raga:
+            """)
+    
+            # List of facts
+            facts = [
+                ("🎵 **Melakarta Raga**", "Todi is the 8th raga in the 72 Melakarta system."),
+                ("🔢 **Sampurna Scale**", "It employs all seven notes in both ascending and descending scales."),
+                ("🎶 **Vadi and Samvadi**", "The Vadi is G₂ (Sadharana Gandharam), and the Samvadi is D₁ (Shuddha Dhaivatam)."),
+                ("🌅 **Time of Performance**", "Traditionally performed in the morning, evoking devotion and seriousness."),
+                ("🎤 **Famous Compositions**", "Iconic compositions include 'Kaddanu Variki' by Tyagaraja and 'Gajavadana Sammodita' by Muthuswami Dikshitar."),
+                ("💎 **Name Meaning**", "Todi translates to 'to invoke' or 'to call out.'"),
+                ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Bhairav."),
+                ("🩷 **Emotional Range**", "Todi conveys devotion, seriousness, and intensity."),
+                ("🎻 **Vocal and Instrumental**", "Renowned for its use in both vocal and instrumental renditions, emphasizing its expressive power."),
+            ]
+    
+            # Loop through the list and present each fact
+            for fact in facts:
+                st.markdown(f"**{fact[0]}**: {fact[1]}")
 
         else:
             i1, i2 = st.columns(2)
@@ -460,68 +460,68 @@ if st.button("Analyze"):
         with i1:
             st.title("This song is in the ragam: Khamboji")
 
-        st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ S  
-                    **Avarohana**: S N₂ D₂ P M₁ G₃ R₂ S''')
-
-        st.markdown("""
-        **Notes of Khamboji:**
-        - **S** (Shadjam)
-        - **R₂** (Chatushruti Rishabham)
-        - **G₃** (Antara Gandharam)
-        - **M₁** (Shuddha Madhyamam)
-        - **P** (Paṅchamam)
-        - **D₂** (Chatushruti Dhaivatam)
-        - **N₂** (Kaishiki Nishadam)
-        """)
-
-        # Title of the page
-        st.title("Janya Ragas of Khamboji")
-
-        # Display text with bullet points and emojis
-        st.markdown("""
-        Khamboji has given rise to numerous Janya (derived) ragas, each bringing unique textures to Carnatic music. 
-        Some popular Janya ragas include:
-        - 🎶 **Harikambhoji**
-        - 🎶 **Natakuranji**
-        - 🎶 **Kedaragaula**
-        - 🎶 **Surati**
-        - 🎶 **Mohana**
-
-        These ragas highlight Khamboji's adaptability and melodic richness.
-        """)
-
-        with st.form("my_form"):
-            st.write("Feedback - Was I Right?")
-            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-            selected = st.feedback("thumbs")
-            if selected is not None:
-                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-            # Every form must have a submit button.
-            submitted = st.form_submit_button("Submit")
+            st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ S  
+                        **Avarohana**: S N₂ D₂ P M₁ G₃ R₂ S''')
+    
+            st.markdown("""
+            **Notes of Khamboji:**
+            - **S** (Shadjam)
+            - **R₂** (Chatushruti Rishabham)
+            - **G₃** (Antara Gandharam)
+            - **M₁** (Shuddha Madhyamam)
+            - **P** (Paṅchamam)
+            - **D₂** (Chatushruti Dhaivatam)
+            - **N₂** (Kaishiki Nishadam)
+            """)
+    
+            # Title of the page
+            st.title("Janya Ragas of Khamboji")
+    
+            # Display text with bullet points and emojis
+            st.markdown("""
+            Khamboji has given rise to numerous Janya (derived) ragas, each bringing unique textures to Carnatic music. 
+            Some popular Janya ragas include:
+            - 🎶 **Harikambhoji**
+            - 🎶 **Natakuranji**
+            - 🎶 **Kedaragaula**
+            - 🎶 **Surati**
+            - 🎶 **Mohana**
+    
+            These ragas highlight Khamboji's adaptability and melodic richness.
+            """)
+    
+            with st.form("my_form"):
+                st.write("Feedback - Was I Right?")
+                sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+                selected = st.feedback("thumbs")
+                if selected is not None:
+                    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+                # Every form must have a submit button.
+                submitted = st.form_submit_button("Submit")
 
         with i2:
             st.image("spec.png")
 
-        st.title('Fun Facts About Khamboji')
-
-        # Add an introductory text
-        st.markdown("""
-        Khamboji is a vibrant and versatile raga in Carnatic music. Here are some interesting facts about this raga:
-        """)
-
-        # List of facts
-        facts = [
-            ("🎵 **Melakarta Raga**", "Khamboji is a Janya raga of the 28th Melakarta, Harikambhoji."),
-            ("🔢 **Vakra Scale**", "The avarohana has a vakra (zigzag) structure, adding to its charm."),
-            ("🎶 **Vadi and Samvadi**", "The Vadi is G₃ (Antara Gandharam), and the Samvadi is N₂ (Kaishiki Nishadam)."),
-            ("🌅 **Time of Performance**", "Typically performed in the evening, evoking a mood of devotion and grandeur."),
-            ("🎤 **Famous Compositions**", "Famous compositions include 'O Ranga Sai' by Tyagaraja and 'Marubari' by Muthuswami Dikshitar."),
-            ("💎 **Name Meaning**", "Khamboji translates to 'a beautiful garland' in Sanskrit."),
-            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Kafi."),
-            ("🩷 **Emotional Range**", "Khamboji conveys joy, grandeur, and devotion."),
-            ("🎻 **Vocal and Instrumental**", "Widely used in both vocal and instrumental forms, showcasing its majestic appeal."),
-        ]
-
-        # Loop through the list and present each fact
-        for fact in facts:
-            st.markdown(f"**{fact[0]}**: {fact[1]}")
+            st.title('Fun Facts About Khamboji')
+    
+            # Add an introductory text
+            st.markdown("""
+            Khamboji is a vibrant and versatile raga in Carnatic music. Here are some interesting facts about this raga:
+            """)
+    
+            # List of facts
+            facts = [
+                ("🎵 **Melakarta Raga**", "Khamboji is a Janya raga of the 28th Melakarta, Harikambhoji."),
+                ("🔢 **Vakra Scale**", "The avarohana has a vakra (zigzag) structure, adding to its charm."),
+                ("🎶 **Vadi and Samvadi**", "The Vadi is G₃ (Antara Gandharam), and the Samvadi is N₂ (Kaishiki Nishadam)."),
+                ("🌅 **Time of Performance**", "Typically performed in the evening, evoking a mood of devotion and grandeur."),
+                ("🎤 **Famous Compositions**", "Famous compositions include 'O Ranga Sai' by Tyagaraja and 'Marubari' by Muthuswami Dikshitar."),
+                ("💎 **Name Meaning**", "Khamboji translates to 'a beautiful garland' in Sanskrit."),
+                ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Kafi."),
+                ("🩷 **Emotional Range**", "Khamboji conveys joy, grandeur, and devotion."),
+                ("🎻 **Vocal and Instrumental**", "Widely used in both vocal and instrumental forms, showcasing its majestic appeal."),
+            ]
+    
+            # Loop through the list and present each fact
+            for fact in facts:
+                st.markdown(f"**{fact[0]}**: {fact[1]}")
