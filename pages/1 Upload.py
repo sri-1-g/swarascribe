@@ -7,7 +7,6 @@ with col2:
 uploaded_file = st.file_uploader("Choose a file")
 if st.button("Analyze"):
     prediction = predict_audio_class(uploaded_file)
-    st.write(prediction)
     if prediction=="Shankharabharanam":
             
         hi1, hi2 = st.columns(2)
