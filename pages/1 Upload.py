@@ -382,7 +382,7 @@ if st.button("Analyze"):
             for fact in facts:
                 st.markdown(f"**{fact[0]}**: {fact[1]}")
 
-    elif prediction=="Todi"():
+    elif prediction=="Todi":
         a1, a2 = st.columns(2)
 
         with a1:
