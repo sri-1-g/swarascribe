@@ -4,7 +4,7 @@ st.set_page_config(layout="wide")
 st.html(
     """
 <style>
-[data-testid="stSidebarContent"] {
+.st-emotion-cache-9s49fs {
     color: white !important;
 }
 </style>
