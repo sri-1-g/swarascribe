@@ -4,8 +4,8 @@ st.set_page_config(layout="wide")
 st.html(
     """
 <style>
-.st-emotion-cache-9s49fs {
-    color: white !important;
+.st-emotion-cache-9s49fs, .st-emotion-cache-a6n1w7 {
+    color: wheat !important;
 }
 </style>
 """
