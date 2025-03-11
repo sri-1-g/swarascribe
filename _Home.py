@@ -6,7 +6,6 @@ st.html(
 <style>
 [data-testid="stSidebarContent"] {
     color: white;
-    background-color: red;
 }
 </style>
 """
