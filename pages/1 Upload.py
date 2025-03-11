@@ -1,7 +1,7 @@
 import streamlit as st
 from predict import predict_audio_class
 st.set_page_config(layout="wide")
-st.sidebar.image("swara.png", use_column_width=True)
+st.sidebar.image("swara.png")
 col1, col2, col3 = st.columns(3)
 with col2:
     st.image("upload.png")
