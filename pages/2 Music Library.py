@@ -1,6 +1,15 @@
 import streamlit as st
 from raag_data import raags
 st.set_page_config(layout="wide")
+st.html(
+    """
+<style>
+.st-emotion-cache-9s49fs, .st-emotion-cache-a6n1w7 {
+    color: wheat !important;
+}
+</style>
+"""
+)
 st.sidebar.image("swara.png")
 col1, col2, col3 = st.columns(3)
 
