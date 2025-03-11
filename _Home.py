@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
-    [data-testid=stSidebar] {
+    [data-testid="stSidebarContent"] {
         color: white;
     }
 </style>
