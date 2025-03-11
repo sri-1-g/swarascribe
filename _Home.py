@@ -10,15 +10,7 @@ st.html(
 </style>
 """
 )
-# st.markdown(
-#         """
-#         <style>
-#         div.st-emotion-cache-9s49fs {
-#             color: white;        }
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
+
 st.sidebar.image("swara.png")
 st.markdown("""
 <style>
