@@ -1,13 +1,16 @@
 import streamlit as st
 
 st.set_page_config(layout="wide")
-st.markdown("""
+st.html(
+    """
 <style>
-    [data-testid="stSidebarContent"] {
-        color: white;
-    }
+[data-testid="stSidebarContent"] {
+    color: white;
+    background-color: red;
+}
 </style>
-""", unsafe_allow_html=True)
+"""
+)
 # st.markdown(
 #         """
 #         <style>
