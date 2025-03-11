@@ -1,6 +1,15 @@
 import streamlit as st
 import base64
 st.set_page_config(layout="wide")
+st.html(
+    """
+<style>
+.st-emotion-cache-9s49fs, .st-emotion-cache-a6n1w7 {
+    color: wheat !important;
+}
+</style>
+"""
+)
 st.sidebar.image("swara.png")
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
