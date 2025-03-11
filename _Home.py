@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide")
- st.markdown(
+st.markdown(
         """
         <style>
         div.st-emotion-cache-9s49fs {
