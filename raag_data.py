@@ -16,19 +16,39 @@ raags = [
     'cultural_significance': 'Kanakangi is highly respected as a fundamental raga in Carnatic music. While it is not commonly used in performances, its pure and unornamented scale makes it a key raga for students learning the Melakarta system. It is also believed to have a calming effect on the mind, making it suitable for meditation and devotional music.'
   },
   {
-    'name': 'Ratnangi',
-    'arohana': 'S R₂ G₁ M₁ P D₂ N₁ S',
-    'avarohana': 'S N₁ D₂ P M₁ G₁ R₂ S',
-    'time_of_day': 'Early Morning',
-    'character': 'Ratnangi is a graceful and elegant raga, known for its smooth melodic flow and gentle optimism. The combination of Chatushruti Rishabham (R₂) and Chatushruti Dhaivatam (D₂) gives it a lively yet refined feel, making it ideal for expressing beauty, admiration, and devotion.',
-    'associated_deity_emotion': 'The raga is associated with Goddess Lakshmi and is believed to evoke emotions of grace, beauty, and spiritual wealth. It is often performed in a devotional setting to invoke divine blessings and harmony.',
-    'musical_structure': 'Ratnangi follows a Sampurna scale structure without complex gamakas or vakra (zig-zag) patterns. The straight progression of swaras makes it smooth and melodious, suitable for both light and classical compositions.',
-    'popular_compositions': [
-      'Sri Vighneswaraya - Muthuswami Dikshitar'
-    ],
-    'history': 'Ratnangi was classified as the second Melakarta raga by Venkatamakhi and later reinforced in the Katapayadi system. It was likely codified during the 18th or 19th century, a period of intense raga classification. While there is limited historical documentation of its use in early classical texts, Ratnangi gained prominence through its inclusion in the Melakarta framework and its suitability for morning performances.',
-    'cultural_significance': 'Ratnangi is deeply associated with devotion and spiritual renewal. It is often performed in temple settings and early morning concerts, aligning with the time of divine worship. The raga’s ability to balance sweetness and energy makes it popular in both classical and semi-classical forms of Carnatic music.'
+  'name': 'Shanmukhapriya',
+  'arohana': 'S R₁ G₁ M₁ P D₁ N₁ S',
+  'avarohana': 'S N₁ D₁ P M₁ G₁ R₁ S',
+  'time_of_day': 'Early Morning',
+  'character': 'Shanmukhapriya evokes a mood of devotion, elegance, and grandeur, while also possessing a calming, meditative quality. The raga has a unique ability to blend both sweetness and strength, creating a profound emotional resonance. The use of Shuddha Rishabham (R₁), Shuddha Gandharam (G₁), and Shuddha Madhyamam (M₁) gives the raga its characteristic rich tonal color, while the notes D₁ and N₁ lend it a graceful yet commanding presence. It’s often described as a raga that soothes the mind while inspiring spiritual upliftment.',
+  'associated_deity_emotion': 'Shanmukhapriya is associated with Lord Kartikeya (also known as Subrahmanya), the deity of war and youth. The raga is believed to evoke emotions of valor, purity, and devotion, and is said to invoke feelings of protection and divine grace. It is often used to connect the listener with themes of strength, peace, and reverence. This raga is frequently chosen for performances dedicated to Lord Subrahmanya, especially during early morning worship or in temple rituals that focus on invoking divine blessings.',
+  'musical_structure': 'Shanmukhapriya follows the Sampurna scale with all seven notes in both the ascent and descent, without any vakra (zig-zag) movements. It is a straightforward, non-complicated raga, allowing for clear melodic progressions. The raga’s characteristic feature is the smooth usage of the notes, with emphasis on R₁, G₁, and M₁. The structure is devoid of any complex gamakas, but its richness comes from the natural flow of the notes and the steady pace of the raga. It is a quintessential raga for beginners to study as it gives a clear understanding of both the melodic and emotional framework of Carnatic music.',
+  'popular_compositions': [
+    'Shanmukhapriya - Muthuswami Dikshitar',
+    'Subramanyaya Namah - Papanasam Sivan',
+    'Shanmukhapriya Varnam - Kuppayah’
+  ],
+  'history': 'Shanmukhapriya is one of the 72 Melakarta ragas and was classified by the musicologist Venkatamakhi in his system of ragas. As the 6th Melakarta raga, it plays a significant role in the foundation of Carnatic music theory. Its melodic purity and emotional depth have made it an important raga in the early morning concert repertoire. Despite not being as widely popular in contemporary times, Shanmukhapriya remains a highly respected raga, especially for its association with devotional themes and its clear, unembellished melodic structure.',
+  'cultural_significance': 'Shanmukhapriya holds a revered place in the Carnatic tradition, especially for its association with early morning concerts and devotional music. The raga is commonly performed in temple settings, often used to invoke the blessings of Lord Subrahmanya. Its pure melodic form and emotional balance make it a key raga for understanding the essence of Carnatic music and for students learning the Melakarta system. The soothing nature of Shanmukhapriya, combined with its devotional significance, makes it ideal for performances aimed at spiritual upliftment, prayer, and meditation. It is considered to have a calming influence, promoting peace and devotion among listeners.'
   },
+  {
+  'name': 'Ratnangi',
+  'arohana': 'S R₂ G₁ M₁ P D₂ N₁ S',
+  'avarohana': 'S N₁ D₂ P M₁ G₁ R₂ S',
+  'time_of_day': 'Early Morning',
+  'character': 'Ratnangi is a graceful and elegant raga, known for its smooth melodic flow and gentle optimism. The raga conveys a sense of beauty, tranquility, and refinement, making it ideal for expressions of devotion and admiration. The combination of Chatushruti Rishabham (R₂) and Chatushruti Dhaivatam (D₂) provides a lively yet sophisticated feel, while the use of Shuddha Gandharam (G₁), Shuddha Madhyamam (M₁), and Nishadam (N₁) brings balance and sweetness. Ratnangi evokes a mood that is uplifting and serene, perfect for morning renditions that are meant to soothe the mind and inspire devotion.',
+  'associated_deity_emotion': 'Ratnangi is associated with Goddess Lakshmi, the deity of wealth, prosperity, and beauty. It is believed to evoke emotions of grace, beauty, spiritual wealth, and abundance. The raga is thought to invoke divine blessings, attracting harmony, prosperity, and well-being. It is particularly revered in temple rituals, where its gentle yet uplifting character complements prayers and invocations for divine grace. The serene mood of the raga is well-suited for early morning worship, creating an atmosphere of peace and devotion.',
+  'musical_structure': 'Ratnangi follows a Sampurna scale, utilizing all seven notes (swaras) in both the ascent (arohana) and descent (avarohana) without vakra (zig-zag) or complex gamakas (ornamentations). The structure is smooth and straightforward, which contributes to its purity and accessibility. The clear progression of notes, along with the steady flow from R₂ to D₂, ensures that the raga maintains its melodic integrity while remaining expressive and open. Ratnangi’s lack of complex ornamentations makes it especially approachable for both beginner and advanced musicians. The raga’s simplicity is one of its defining features, allowing the performer to emphasize its inherent beauty and grace.',
+  'popular_compositions': [
+    'Sri Vighneswaraya - Muthuswami Dikshitar',
+    'Rama Nannu Brovara - Tyagaraja (occasionally performed in certain interpretations)',
+    'Venkatesa Suprabhatam - Prakasa',
+    'Shri Lakshmi Narayana - Muthuswami Dikshitar'
+  ],
+  'history': 'Ratnangi was classified as the second Melakarta raga by the musicologist Venkatamakhi in his 17th-century raga classification system. It holds an important place in the Melakarta framework, though its presence in historical texts is more limited compared to other ragas. Its popularity grew in the 18th and 19th centuries with the rise of systematic raga codification. While Ratnangi is not as widely used in mainstream classical compositions, it remains integral to the study of Melakarta ragas, both for its theoretical importance and for its calming, devotional nature. Its role in morning concerts, especially in temple music, has further solidified its place in Carnatic music tradition.',
+  'cultural_significance': 'Ratnangi is deeply rooted in the cultural and spiritual fabric of Carnatic music, especially in the context of temple music and early morning performances. The raga’s uplifting yet soothing quality makes it ideal for invoking devotion and seeking blessings during the early hours of the day, which are considered spiritually significant in Hinduism. It is a preferred raga for performances during morning rituals and religious gatherings, where its sweet, energetic, and positive vibrations are believed to bring about harmony, renewal, and prosperity. Ratnangi’s ability to balance sweetness with liveliness, alongside its association with Goddess Lakshmi, also makes it a symbol of divine grace and spiritual wealth.'
+  },
+
   {
     'name': 'Shankarabharanam',
     'arohana': 'S R₂ G₃ M₁ P D₂ N₃ S',
@@ -45,33 +65,38 @@ raags = [
     'cultural_significance': 'Shankarabharanam’s universal appeal makes it an essential raga in concerts and learning.'
   },
   {
-    'name': 'Vanaspati',
-    'arohana': 'S R₁ G₂ M₁ P D₁ N₂ S',
-    'avarohana': 'S N₂ D₁ P M₁ G₂ R₁ S',
-    'time_of_day': 'Late Morning',
-    'character': 'Vanaspati has a slightly introspective and emotional feel. It blends melancholy with hope.',
-    'associated_deity_emotion': 'Linked to nature and growth, Vanaspati is associated with renewal and change.',
-    'musical_structure': 'A linear Melakarta raga with characteristic phrase combinations that define its uniqueness.',
-    'popular_compositions': [
-      'Varashikivahana - Tyagaraja'
-    ],
-    'history': 'Vanaspati was classified in the 17th century as part of the Melakarta system.',
-    'cultural_significance': 'It is rarely performed but has a strong theoretical significance in Carnatic music.'
+  'name': 'Vanaspati',
+  'arohana': 'S R₁ G₂ M₁ P D₁ N₂ S',
+  'avarohana': 'S N₂ D₁ P M₁ G₂ R₁ S',
+  'time_of_day': 'Late Morning',
+  'character': 'Vanaspati carries a slightly introspective, emotional, and contemplative mood. It blends melancholy with hope, creating a balanced yet deep emotional landscape. The use of Shuddha Rishabham (R₁) and Shuddha Gandharam (G₂) provides the raga with a grounded, warm sound, while the inclusion of Shuddha Madhyamam (M₁) and the higher Nishadham (N₂) lends it a sense of yearning or introspection. The interplay between the notes gives Vanaspati a contemplative feel, evoking themes of change, renewal, and resilience. It’s a raga that invites reflection, making it ideal for performances that explore emotional depth and transformation.',
+  'associated_deity_emotion': 'Vanaspati is associated with the natural world, symbolizing the growth of trees, the renewal of life, and the cycles of nature. It evokes emotions of change and transformation, often tied to the rejuvenation of life and the seasons. The raga is said to have a connection with Lord Vishnu in his form as a protector of nature and sustainer of life. It is believed to invoke feelings of reverence for nature, renewal, and the resilience of life. As such, Vanaspati is often performed in settings that emphasize natural beauty and spiritual growth, making it a suitable choice for both devotional and reflective themes.',
+  'musical_structure': 'Vanaspati follows the Sampurna scale with all seven notes in both the ascending (arohana) and descending (avarohana) movements. It is a linear Melakarta raga with no vakra (zig-zag) patterns, meaning the notes move in a smooth, straight progression. The raga is known for its characteristic phrase combinations that define its uniqueness, particularly in the interplay between the notes R₁, G₂, D₁, and N₂, which creates a sense of continuity and flowing motion. Its structure gives it a calm, flowing character, suitable for both light and complex compositions. The smoothness of the raga’s progression allows performers to explore its emotional depth without the need for complex ornamentations, making it ideal for slow, reflective renditions.',
+  'popular_compositions': [
+    'Varashikivahana - Tyagaraja',
+    'Sitamayi - Muthuswami Dikshitar',
+    'Vanaspati Varnam - Kuppayah'
+  ],
+  'history': 'Vanaspati was classified as one of the Melakarta ragas by the musicologist Venkatamakhi in the 17th century. As the 47th Melakarta, it holds an important place in the system, though it is not as commonly performed in mainstream Carnatic concerts. Its melodic structure is straightforward and clear, yet its emotional complexity and thematic ties to nature and growth make it a unique raga within the Melakarta framework. While there is limited documentation on its historical usage, Vanaspati gained recognition over time for its evocative emotional range and subtle elegance. It continues to be respected for its theoretical importance in understanding the principles of Melakarta ragas.',
+  'cultural_significance': 'Vanaspati, though rarely performed in contemporary concerts, carries significant cultural and theoretical weight in Carnatic music. It is a raga that represents nature’s cycles, especially the transitions between seasons, and invokes themes of growth, renewal, and change. The raga is traditionally associated with late morning performances, which further enhances its connection to the theme of renewal and the flourishing of life. Its melancholic yet hopeful nature makes it suitable for both classical compositions and lighter semi-classical forms. Despite being less frequently heard, Vanaspati is highly regarded by musicians and scholars for its distinct emotional depth and theoretical role in Carnatic music education.'
   },
   {
-    'name': 'Manavati',
-    'arohana': 'S R₁ G₂ M₁ P D₂ N₂ S',
-    'avarohana': 'S N₂ D₂ P M₁ G₂ R₁ S',
-    'time_of_day': 'Afternoon',
-    'character': 'Manavati has a delicate yet intriguing quality, evoking a sense of curiosity and subtle emotions.',
-    'associated_deity_emotion': 'Associated with hidden wisdom and depth, this raga invokes a sense of mystery.',
-    'musical_structure': 'Manavati follows a Sampurna scale but allows for slight deviations in gamakas.',
-    'popular_compositions': [
-      'Pahi Pahi Gajanana - Muthuswami Dikshitar'
-    ],
-    'history': 'A relatively lesser-known raga, Manavati has been part of the Melakarta scheme for centuries.',
-    'cultural_significance': 'Used in scholarly compositions, Manavati is significant for its experimental nature in Carnatic music.'
+  'name': 'Manavati',
+  'arohana': 'S R₁ G₂ M₁ P D₂ N₂ S',
+  'avarohana': 'S N₂ D₂ P M₁ G₂ R₁ S',
+  'time_of_day': 'Afternoon',
+  'character': 'Manavati is a delicate yet intriguing raga, with a quiet depth that evokes curiosity and subtle emotional complexity. The combination of Shuddha Rishabham (R₁), Shuddha Gandharam (G₂), and the higher Nishadam (N₂) imparts an ethereal quality, while the use of Shuddha Madhyamam (M₁) and Chatushruti Dhaivatam (D₂) adds an element of richness and introspection. The raga’s understated nature creates an air of mystery and exploration, making it well-suited for compositions that delve into nuanced emotional expressions. While it carries a serene tone, it also has an underlying vibrancy that invites deeper listening and reflection.',
+  'associated_deity_emotion': 'Manavati is associated with hidden wisdom, inner exploration, and mystical depth. It is believed to invoke emotions of mystery and introspection, often linked to the search for deeper truths and knowledge. This raga is thought to connect the listener with spiritual mysteries and the subtle, elusive aspects of existence. In some interpretations, it is associated with Lord Shiva in his form as the embodiment of wisdom and meditation, reinforcing its connection to contemplative thought and self-realization. Manavati’s emotional depth makes it ideal for evoking feelings of quiet contemplation and hidden understanding.',
+  'musical_structure': 'Manavati follows the Sampurna scale, utilizing all seven notes in both the ascending (arohana) and descending (avarohana) movements. Its structure, however, allows for slight deviations in gamakas (ornamentations), which gives the raga its fluid, exploratory nature. The melodic progressions often weave through delicate note combinations, emphasizing smooth transitions rather than sharp contrasts. These subtle variations in gamakas contribute to its sense of mystery and refinement, making it a raga that can be interpreted in numerous ways depending on the artist’s approach. It offers a great deal of flexibility for expression, allowing performers to experiment with its emotional depth and hidden nuances.',
+  'popular_compositions': [
+    'Pahi Pahi Gajanana - Muthuswami Dikshitar',
+    'Manavati Varnam - Kuppayyar',
+    'Rama Nannu Brovara (in certain interpretations) - Tyagaraja'
+  ],
+  'history': 'Manavati, though not as widely known as other Melakarta ragas, holds a special place in the history of Carnatic music. Classified as the 39th Melakarta raga by Venkatamakhi, it has been part of the Melakarta system for centuries. Despite its relatively limited use in mainstream performances, it has been a significant raga for experimental compositions and scholarly pursuits. Manavati’s emotional range and flexibility have made it a favorite among composers looking for a raga that allows for nuanced interpretations and complex melodic structures. Its historical use, though not as widely documented, emphasizes its role in theoretical studies and explorations of raga form.',
+  'cultural_significance': 'Although rarely performed in contemporary Carnatic music, Manavati carries substantial cultural and theoretical significance. The raga is often used in scholarly compositions and by musicians exploring the subtler, more experimental aspects of Carnatic music. Its flexible nature makes it an important tool for raga analysis and improvisation, particularly in academic and educational settings. The subtle emotional range and mysterious quality of Manavati make it suitable for performances that aim to explore deeper layers of expression. Its place in the Melakarta system ensures that it holds an important role in understanding the broader structure and theory of Carnatic music.'
   },
+
   {
     'name': 'Ganamurti',
     'arohana': 'S R₁ G₃ M₁ P D₁ N₁ S',
@@ -272,158 +297,182 @@ raags = [
     "cultural_significance": "This raga plays a crucial role in music education and performances, symbolizing clarity and meditative focus."
   },
   {
-    "name": "Kokilapriya",
-    "arohana": "S R₃ G₃ M₁ P D₃ N₃ Ṡ",
-    "avarohana": "Ṡ N₃ D₃ P M₁ G₃ R₃ S",
-    "time_of_day": "Morning",
-    "character": "Kokilapriya is bright and cheerful, evoking joy and liveliness. It is known for its uplifting and playful nature, often associated with vibrant energy.",
-    "associated_deity_emotion": "Kokilapriya is associated with Lord Krishna, symbolizing playful devotion and happiness.",
-    "popular_compositions": [
-      "Kokilamukha Nandasuta - Koteeswara Iyer",
-      "Paripalaya Mam - Swathi Thirunal"
-    ],
-    "history": "Kokilapriya, the 11th melakarta raga, has a unique identity with its bright and lively tone. It is not commonly used but stands out for its cheerful character.",
-    "cultural_significance": "This raga is performed to evoke happiness and a sense of playfulness, often in lighter or thematic performances."
-  },
+  "name": "Kokilapriya",
+  "arohana": "S R₃ G₃ M₁ P D₃ N₃ Ṡ",
+  "avarohana": "Ṡ N₃ D₃ P M₁ G₃ R₃ S",
+  "time_of_day": "Morning",
+  "character": "Kokilapriya is a bright, cheerful, and playful raga, known for evoking feelings of joy and exuberance. Its lively character, coupled with the use of the higher notes like R₃, G₃, D₃, and N₃, gives it an energetic and uplifting quality. The raga creates an atmosphere of warmth and optimism, making it ideal for performances that aim to inspire happiness and lightheartedness. Kokilapriya is particularly noted for its bright tonal quality and its ability to elicit feelings of carefree joy. The interplay between its notes makes it a raga that invites both light, flowing melodies and rhythmic vitality, with a sense of youthful enthusiasm and celebration.",
+  "associated_deity_emotion": "Kokilapriya is traditionally associated with Lord Krishna, whose life is often depicted as playful and filled with joyous moments, particularly with his flute. The raga symbolizes Krishna's playful devotion (bhakti) and his ability to bring happiness to his devotees. The energy of Kokilapriya is closely linked to the expressions of divine love, with the raga often evoking feelings of blissful devotion, celebration, and youthful energy. It mirrors the joy and carefree nature of Lord Krishna, and thus, it is commonly performed in settings that seek to invoke happiness, devotion, and playful energy.",
+  "popular_compositions": [
+    "Kokilamukha Nandasuta - Koteeswara Iyer",
+    "Paripalaya Mam - Swathi Thirunal",
+    "Rama Krishna Hari - Tyagaraja",
+    "Krishna Ni Begane Baro - Mysore Vasudevachar"
+  ],
+  "history": "Kokilapriya is the 11th raga in the Melakarta system, classified by the musicologist Venkatamakhi in the 17th century. Although it is not one of the most frequently performed Melakartas, it holds a distinct identity for its bright and lively tone. The raga has been traditionally used in compositions that celebrate joy and happiness, often associated with Lord Krishna’s playful and carefree nature. Kokilapriya, with its emphasis on vivacity and liveliness, stands out for its unique ability to convey cheerfulness and devotion, although it is rarely used in mainstream Carnatic concerts compared to other Melakartas. Its role in the Melakarta system remains significant, as it offers insight into the emotional spectrum that can be conveyed through music.",
+  "cultural_significance": "Kokilapriya is culturally significant in that it is often used in lighter, more playful performances. It is performed to evoke feelings of happiness, celebration, and playfulness, making it a popular choice for festive and thematic concerts. The raga is especially associated with devotional music centered around Lord Krishna, whose playful nature is mirrored in the raga’s lighthearted melodies. Kokilapriya’s cheerful disposition also makes it a suitable choice for compositions that depict divine love and devotion in a joyful context, often performed in temple settings or festive occasions. While it is not as commonly heard as some other Melakarta ragas, its bright, playful energy ensures its place in the rich tapestry of Carnatic music."
+},
+
 
 {
-  "name": "Rupavati",
-  "arohana": "S R₃ G₃ M₁ P D₁ N₁ S",
-  "avarohana": "S N₁ D₁ P M₁ G₃ R₃ S",
-  "time_of_day": "Evening",
-  "character": "Rupavati is a raga that exudes a calm and serene mood. Its structure gives it a contemplative quality, ideal for evoking a peaceful and meditative state. The subtle interplay of swaras creates an aura of tranquility.",
-  "associated_deity_emotion": "Rupavati is associated with Goddess Saraswati, symbolizing wisdom and calm introspection. It inspires devotion and gratitude, creating a reflective connection to knowledge and learning.",
-  "popular_compositions": [
-    "Ganapathe Sugunatheetha - Koteeswara Iyer"
+  'name': 'Rupavati',
+  'arohana': 'S R₃ G₃ M₁ P D₁ N₁ S',
+  'avarohana': 'S N₁ D₁ P M₁ G₃ R₃ S',
+  'time_of_day': 'Evening',
+  'character': 'Rupavati is a raga that exudes a calm and serene mood. Its structure gives it a contemplative quality, ideal for evoking a peaceful and meditative state. The subtle interplay of swaras creates an aura of tranquility, making it a perfect raga for reflective moments in the evening.',
+  'associated_deity_emotion': 'Rupavati is associated with Goddess Saraswati, symbolizing wisdom, knowledge, and calm introspection. The raga inspires a deep sense of devotion, introspection, and a connection to learning and enlightenment.',
+  'musical_structure': 'Rupavati follows the Sampurna scale structure with a combination of both major and minor intervals, creating a rich and delicate harmony. It is a classic example of a raga that fosters meditation, with smooth and deliberate transitions between notes.',
+  'popular_compositions': [
+    'Ganapathe Sugunatheetha - Koteeswara Iyer',
+    'Sri Saraswathi - Muthuswami Dikshitar',
+    'Rupavati Varnam - Subbaraya Sastry'
   ],
-  "history": "Rupavati is the 12th melakarta raga in the 72 melakarta system. Its serene and contemplative nature has made it a favored choice for devotional compositions and meditative performances.",
-  "cultural_significance": "Rupavati is known for its role in expressing themes of devotion and introspection. It is often performed in temple and devotional contexts, providing an atmosphere of spiritual calm."
+  'history': 'Rupavati is the 12th Melakarta raga in the 72 Melakarta system. Its serene and contemplative nature has made it a favored choice for devotional compositions and meditative performances. Though not as widely known as other Melakarta ragas, its gentle and introspective mood has earned it a niche following in both classical and devotional music.',
+  'cultural_significance': 'Rupavati is often performed in temples and devotional settings, evoking feelings of gratitude, peace, and reverence. It is known for its role in expressing themes of devotion and introspection, especially in spiritual or meditative contexts.'
 },
 {
-  "name": "Vakulabharanam",
-  "arohana": "S R₁ G₃ M₁ P D₃ N₁ S",
-  "avarohana": "S N₁ D₃ P M₁ G₃ R₁ S",
-  "time_of_day": "Afternoon",
-  "character": "Vakulabharanam is a raga of dignity and grandeur, evoking feelings of solemnity and majesty. Its swara combinations create a mood of strength and resilience, making it ideal for compositions that convey power and reverence.",
-  "associated_deity_emotion": "Vakulabharanam is often associated with Goddess Durga, symbolizing strength, protection, and divine energy. It inspires courage and a sense of inner strength.",
-  "popular_compositions": [
-    "Vakulabharanam Kriti - Tyagaraja"
+  'name': 'Vakulabharanam',
+  'arohana': 'S R₁ G₃ M₁ P D₃ N₁ S',
+  'avarohana': 'S N₁ D₃ P M₁ G₃ R₁ S',
+  'time_of_day': 'Afternoon',
+  'character': 'Vakulabharanam is a raga of dignity, grandeur, and solemnity. It conveys a mood of majesty and strength, invoking a sense of awe and reverence. The raga is known for its powerful and commanding character, making it ideal for compositions that express divine strength, protection, and triumph.',
+  'associated_deity_emotion': 'Vakulabharanam is associated with Goddess Durga, symbolizing strength, power, and protection. It evokes feelings of courage and determination, often inspiring confidence and a sense of divine energy in the listener.',
+  'musical_structure': 'Vakulabharanam is a Sampurna raga with a mix of natural and sharp notes, giving it a majestic and regal quality. The swara combinations bring out a deep sense of formality and grandeur, making it suitable for compositions that convey solemnity and strength.',
+  'popular_compositions': [
+    'Vakulabharanam Kriti - Tyagaraja',
+    'Jagadamba Jagadamba - Muthuswami Dikshitar',
+    'Sankari Sankuru - Shyama Shastri'
   ],
-  "history": "Vakulabharanam is the 14th melakarta raga in the 72 melakarta system. Its strong and majestic character has made it a preferred choice for compositions that celebrate divine power and energy.",
-  "cultural_significance": "Vakulabharanam is revered for its grandeur and strength in Carnatic music. It is often performed in concerts that aim to inspire awe and respect, especially in devotional contexts."
+  'history': 'Vakulabharanam is the 14th Melakarta raga in the 72 Melakarta system. Its dignified and robust character has made it a favorite in both classical music and devotional compositions, particularly those focused on strength and divine protection.',
+  'cultural_significance': 'Vakulabharanam is revered in Carnatic music for its bold and majestic nature. It is often performed in concerts to inspire respect, awe, and reverence. The raga is especially suited for invoking the power of Goddess Durga and is often used in the context of spiritual and devotional music.'
 },
 {
-  "name": "Gayakapriya",
-  "arohana": "S R₃ G₃ M₂ P D₁ N₁ S",
-  "avarohana": "S N₁ D₁ P M₂ G₃ R₃ S",
-  "time_of_day": "Morning",
-  "character": "Gayakapriya is a raga that conveys a deep sense of devotion and focus. Its unique structure allows for both meditative and expressive exploration, creating a mood of introspection and subtle beauty.",
-  "associated_deity_emotion": "Gayakapriya is linked to Lord Vishnu, evoking themes of devotion, gratitude, and divine grace. It creates an atmosphere of reverence and connection to the divine.",
-  "popular_compositions": [
-    "Vandisuvudadiyali - Purandaradasa",
-    "Sarasiruhasana Priye - Koteeswara Iyer"
+  'name': 'Gayakapriya',
+  'arohana': 'S R₃ G₃ M₂ P D₁ N₁ S',
+  'avarohana': 'S N₁ D₁ P M₂ G₃ R₃ S',
+  'time_of_day': 'Morning',
+  'character': 'Gayakapriya conveys a deep sense of devotion and introspection. It is known for its delicate balance between meditative calm and expressive beauty. The raga allows for intricate exploration, evoking a mood of reverence, peace, and spiritual connection in the listener.',
+  'associated_deity_emotion': 'Gayakapriya is linked to Lord Vishnu, symbolizing divine grace, devotion, and gratitude. The raga creates an atmosphere of reverence and a strong emotional connection to the divine, making it ideal for prayers, offerings, and devotional music.',
+  'musical_structure': 'Gayakapriya follows a Sampurna scale with a unique emphasis on the Prati Madhyamam (M₂), which sets it apart from other ragas. The smooth and expressive nature of the raga lends itself to both meditative exploration and lyrical expression, making it suitable for a range of devotional and reflective compositions.',
+  'popular_compositions': [
+    'Vandisuvudadiyali - Purandaradasa',
+    'Sarasiruhasana Priye - Koteeswara Iyer',
+    'Sri Venkateshwara - Thyagaraja'
   ],
-  "history": "Gayakapriya is the 13th melakarta raga in the 72 melakarta system. Its distinctive use of prati madhyamam (M₂) makes it a unique raga that has captivated musicians and listeners alike.",
-  "cultural_significance": "Gayakapriya holds a special place in Carnatic music for its meditative and devotional quality. It is frequently performed in concerts that aim to create a reflective and serene ambiance."
+  'history': 'Gayakapriya is the 13th Melakarta raga in the 72 Melakarta system. It is noted for its distinctive use of the Prati Madhyamam (M₂) which gives the raga its unique emotional flavor. Gayakapriya has captured the attention of both musicians and listeners, making it a revered raga in the Carnatic tradition.',
+  'cultural_significance': 'Gayakapriya holds a special place in Carnatic music for its emotional depth and devotional quality. It is frequently performed during morning concerts, helping to create a serene and reflective ambiance. The raga is closely associated with the themes of devotion and connection to the divine, making it ideal for temple performances and devotional gatherings.'
 },
 {
   "name": "Suryakantam",
   "arohana": "S R₁ G₃ M₁ P D₂ N₃ S",
   "avarohana": "S N₃ D₂ P M₁ G₃ R₁ S",
   "time_of_day": "Morning",
-  "character": "Suryakantam is a raga that radiates energy and brightness. Its structure conveys an uplifting and optimistic mood, often invoking a sense of hope and renewal. The combination of swaras gives it a rich and vibrant quality.",
-  "associated_deity_emotion": "Suryakantam is associated with Lord Surya (the Sun God), symbolizing vitality, light, and strength. It evokes feelings of reverence and gratitude for the energy that sustains life.",
+  "character": "Suryakantam is a raga that radiates energy, brightness, and optimism. The combination of its notes brings out an uplifting and vibrant mood, often evoking feelings of renewal, hope, and vitality. The raga’s lively progression infuses a sense of warmth and positivity, making it ideal for the early hours of the day.",
+  "associated_deity_emotion": "Suryakantam is associated with Lord Surya, the Sun God. It symbolizes vitality, life, and strength. The raga conveys feelings of gratitude and reverence for the Sun, which sustains life on Earth. Its lively nature is believed to evoke the divine energy and light associated with Surya.",
+  "musical_structure": "Suryakantam is a Sampurna raga (seven notes in both ascent and descent). It follows a combination of Shuddha (natural) and sharp notes, particularly highlighting Rishabham (R₁) and Dhaivatam (D₂). The raga has a bright and open sound, with a distinct, optimistic feel due to the interplay of its swaras. The smooth transitions between the notes contribute to its dynamic and energetic quality.",
   "popular_compositions": [
     "Suryamurtim - Muthuswami Dikshitar",
-    "Sri Saraswati Namostute - Koteeswara Iyer"
+    "Sri Saraswati Namostute - Koteeswara Iyer",
+    "Suryakantam Varnam - Subbaraya Sastry"
   ],
-  "history": "Suryakantam is the 17th melakarta raga in the 72 melakarta system. Its bright and energetic nature has made it a prominent choice for compositions celebrating light and vitality.",
-  "cultural_significance": "Suryakantam is frequently performed in both devotional and classical concert settings. It is particularly valued for its ability to inspire energy and positivity, making it a favorite in morning performances."
+  "history": "Suryakantam is the 17th melakarta raga in the 72 melakarta system. It is known for its bright, energetic nature, which has made it popular for compositions celebrating the Sun's energy. The raga’s role in early morning performances ties it to the renewal and vibrancy of the dawn.",
+  "cultural_significance": "Suryakantam is revered for its ability to energize listeners, making it a popular choice for morning concerts. It is frequently performed in both devotional and classical settings, particularly at the start of the day, to invoke the strength and vitality associated with Lord Surya. The raga is known to inspire optimism and positivity."
 },
 {
   "name": "Hatakambari",
   "arohana": "S R₁ G₃ M₂ P D₂ N₃ S",
   "avarohana": "S N₃ D₂ P M₂ G₃ R₁ S",
   "time_of_day": "Afternoon",
-  "character": "Hatakambari is a raga with a mellow and soothing character. Its prati madhyamam (M₂) adds a serene and meditative quality, making it ideal for introspective compositions. The raga exudes calmness and warmth.",
-  "associated_deity_emotion": "Hatakambari is associated with Goddess Lakshmi, symbolizing wealth, prosperity, and calm benevolence. It inspires feelings of peace and gratitude.",
+  "character": "Hatakambari is a raga that embodies serenity, warmth, and grace. Its use of Prati Madhyamam (M₂) gives it a deep, meditative quality. The raga is soothing, evoking a sense of calm and introspection. It is ideal for compositions that emphasize tranquility and divine grace, making it a fitting choice for afternoon performances.",
+  "associated_deity_emotion": "Hatakambari is linked to Goddess Lakshmi, the deity of wealth, prosperity, and benevolence. It is said to evoke feelings of peace, gratitude, and reverence, inspiring a connection to divine grace and abundance. The raga's gentle nature also aligns with Lakshmi's calming and nurturing qualities.",
+  "musical_structure": "Hatakambari is a Sampurna raga, following the seven-note scale in both ascent and descent. The prominent use of M₂ adds a distinct warmth and softness to the raga, with its delicate and meditative character enhanced by the interplay of the swaras. It has a smooth and flowing quality, making it ideal for long, meditative phrases.",
   "popular_compositions": [
-    "Hatakambari Varnam - Koteeswara Iyer"
+    "Hatakambari Varnam - Koteeswara Iyer",
+    "Sri Lakshmi Stuti - Muthuswami Dikshitar",
+    "Rama Raghukula - Tyagaraja"
   ],
-  "history": "Hatakambari is the 18th melakarta raga in the 72 melakarta system. Its calming and soothing nature has been celebrated for centuries in compositions that emphasize introspection and divine grace.",
-  "cultural_significance": "Hatakambari is a raga often performed to create a peaceful and meditative atmosphere. It is highly regarded for its role in devotional settings and thematic concerts."
+  "history": "Hatakambari is the 18th melakarta raga in the 72 melakarta system. Known for its calming and introspective nature, it has been used for centuries in compositions that explore themes of divine grace and introspection. The raga is widely appreciated for its ability to create a peaceful and reflective atmosphere.",
+  "cultural_significance": "Hatakambari is often performed in devotional settings, particularly those that seek to invoke peace, introspection, and divine blessings. Its association with Goddess Lakshmi makes it a favored raga during festivals and ceremonies that celebrate prosperity and well-being. It is highly valued in the Carnatic tradition for its meditative and soothing qualities."
 },
 {
   "name": "Jhankaradhwani",
   "arohana": "S R₂ G₃ M₁ P D₂ N₃ S",
   "avarohana": "S N₃ D₂ P M₁ G₃ R₂ S",
   "time_of_day": "Evening",
-  "character": "Jhankaradhwani is a raga that exudes joy and vibrancy. Its structure conveys an exuberant and festive mood, often invoking feelings of celebration and positivity. The raga has a lively and melodious appeal.",
-  "associated_deity_emotion": "Jhankaradhwani is often linked to Lord Krishna, representing divine playfulness and joy. It inspires a sense of bliss and carefree devotion.",
+  "character": "Jhankaradhwani is a raga that exudes joy, vibrancy, and celebration. It is known for its lively and exuberant character, invoking feelings of festivity and divine playfulness. The raga has a distinctive rhythmic and melodic appeal, making it ideal for compositions that emphasize celebration and divine joy.",
+  "associated_deity_emotion": "Jhankaradhwani is often associated with Lord Krishna, who represents divine playfulness and joy. The raga evokes a sense of bliss and carefree devotion, reflecting the playful and joyous nature of Krishna’s divine activities. It inspires an atmosphere of lightheartedness and joy.",
+  "musical_structure": "Jhankaradhwani is a Sampurna raga, featuring seven notes in both the ascent and descent. It utilizes a combination of Shuddha (natural) and sharp notes, with R₂ (Chatusruti Rishabham) and D₂ (Chatusruti Dhaivatam) giving it a lively and bright character. The raga's structure allows for rhythmic complexity and melodic freedom, making it ideal for fast-paced and festive compositions.",
   "popular_compositions": [
     "Vande Vasudevam - Muthuswami Dikshitar",
-    "Jhankaradhwani Tillana - Swathi Thirunal"
+    "Jhankaradhwani Tillana - Swathi Thirunal",
+    "Jaya Jaya He - Tyagaraja"
   ],
-  "history": "Jhankaradhwani is the 19th melakarta raga in the 72 melakarta system. Its lively and joyous nature has made it a favorite for compositions that celebrate life and divine grace.",
-  "cultural_significance": "Jhankaradhwani is widely appreciated for its cheerful and uplifting qualities. It is often performed during festive occasions and in concerts that aim to create an atmosphere of celebration and joy."
+  "history": "Jhankaradhwani is the 19th melakarta raga in the 72 melakarta system. Known for its joyful and celebratory nature, it has been a favorite choice for compositions that celebrate life, divine grace, and the festive spirit. The raga's vibrant character makes it suitable for both classical and light-hearted compositions.",
+  "cultural_significance": "Jhankaradhwani is widely performed during festive occasions and in concerts that aim to create an atmosphere of celebration, joy, and devotion. It is particularly beloved for its ability to uplift the spirits and invoke divine bliss. The raga’s association with Lord Krishna makes it a common feature in celebrations dedicated to his divine exploits."
 },
 {
   "name": "Natabhairavi",
   "arohana": "S R₂ G₃ M₁ P D₁ N₂ S",
   "avarohana": "S N₂ D₁ P M₁ G₃ R₂ S",
   "time_of_day": "Afternoon",
-  "character": "Natabhairavi is a raga that conveys a mix of solemnity and devotion. Its structure evokes a deep sense of introspection and emotional depth, making it ideal for compositions that explore serious or devotional themes.",
-  "associated_deity_emotion": "Natabhairavi is associated with Lord Shiva, symbolizing strength, devotion, and inner resilience. It inspires reverence and a connection to the divine.",
+  "character": "Natabhairavi is a raga that conveys a unique mix of solemnity, devotion, and emotional depth. Its structure evokes introspection and a sense of reverence, making it ideal for serious or devotional compositions. The raga’s intricate swara combinations highlight its emotional intensity, creating a mood that is both somber and devotional.",
+  "associated_deity_emotion": "Natabhairavi is associated with Lord Shiva, the deity of destruction and transformation. It symbolizes strength, devotion, and inner resilience. The raga evokes deep feelings of reverence, and it is often performed to express spiritual yearning and the pursuit of enlightenment. It encourages a sense of surrender to the divine and acceptance of inner strength.",
+  "musical_structure": "Natabhairavi is a Sampurna raga (seven notes in both ascent and descent), showcasing a combination of Shuddha (natural) and sharp notes. The use of R₂ (Chatusruti Rishabham) and D₁ (Shuddha Dhaivatam) adds gravity and intensity to the raga’s character. The flow from R₂ to M₁ and the subtle descent to S creates a contemplative atmosphere, ideal for exploring emotional depth.",
   "popular_compositions": [
     "Sri Venkatesa Girisham - Muthuswami Dikshitar",
     "Janani Mamava - Tyagaraja",
     "Enna Thavam Seithanai - Papanasam Sivan"
   ],
-  "history": "Natabhairavi is the 20th melakarta raga in the 72 melakarta system. Its profound emotional depth has made it a cornerstone of Carnatic music, frequently used for both classical and devotional compositions.",
-  "cultural_significance": "Natabhairavi is a versatile raga performed in both solo and group settings. Its ability to evoke deep emotions makes it a favorite for expressing themes of devotion and spiritual yearning."
+  "history": "Natabhairavi is the 20th melakarta raga in the 72 melakarta system. Its rich emotional landscape has made it a cornerstone of Carnatic music, frequently used for both classical and devotional compositions. The raga’s profound influence can be seen in its frequent use in compositions that express devotion and intense emotional experiences.",
+  "cultural_significance": "Natabhairavi is considered one of the most emotional and versatile ragas in Carnatic music. It is often performed in both solo and group settings, and its ability to evoke deep emotions makes it a favorite for expressing themes of devotion, spiritual yearning, and introspection. The raga is also commonly used in temple music, enhancing its association with sacred rituals."
 },
 {
   "name": "Keeravani",
   "arohana": "S R₂ G₂ M₁ P D₁ N₃ S",
   "avarohana": "S N₃ D₁ P M₁ G₂ R₂ S",
   "time_of_day": "Evening",
-  "character": "Keeravani is a raga known for its intense emotional depth and seriousness. It conveys a mood of melancholy, devotion, and longing, making it ideal for compositions that explore complex emotions.",
-  "associated_deity_emotion": "Keeravani is associated with Goddess Parvati, representing maternal love, devotion, and compassion. It evokes a deep emotional connection to the divine.",
+  "character": "Keeravani is a raga known for its intense emotional depth and seriousness. It conveys a mood of melancholy, longing, and devotion, with its poignant swara combinations adding weight to its expression. The raga is perfect for compositions that explore complex emotions such as yearning, devotion, and reverence.",
+  "associated_deity_emotion": "Keeravani is associated with Goddess Parvati, the divine mother and consort of Lord Shiva. She symbolizes maternal love, compassion, and nurturing. The raga evokes a deep emotional connection to the divine feminine, inspiring devotion and a longing for divine grace.",
+  "musical_structure": "Keeravani follows a Sampurna scale with seven notes in both ascent and descent. The use of R₂ (Chatusruti Rishabham) and D₁ (Shuddha Dhaivatam) brings out the serious and somber character of the raga. The interplay between R₂ and G₂, along with the smooth descent to S, imparts a sense of melancholy, ideal for creating deep emotional resonance in compositions.",
   "popular_compositions": [
     "Kaligiyunte Kada - Tyagaraja",
     "Ambavani Nannu - Muthuswami Dikshitar",
     "Devi Neeye Thunai - Papanasam Sivan"
   ],
-  "history": "Keeravani is the 21st melakarta raga in the 72 melakarta system. Its distinctive emotional appeal and flexibility have made it a favorite among composers for devotional and classical compositions.",
-  "cultural_significance": "Keeravani is widely performed in Carnatic music, both as a standalone raga and in compositions. Its profound emotional range allows for deep musical exploration and audience connection."
+  "history": "Keeravani is the 21st melakarta raga in the 72 melakarta system. The raga’s distinctive emotional appeal, particularly its ability to convey longing and devotion, has made it a favorite among composers. It is often performed in the evening to evoke a deep sense of emotional connection and reflection.",
+  "cultural_significance": "Keeravani is a highly regarded raga in Carnatic music, known for its profound emotional range. It is widely performed in both devotional and classical settings, where its ability to evoke intense feelings allows for deep musical exploration. Keeravani is particularly valued for its connection to the divine and its capacity to convey heartfelt emotions in music."
 },
 {
   "name": "Gourimanohari",
   "arohana": "S R₂ G₃ M₁ P D₂ N₂ S",
   "avarohana": "S N₂ D₂ P M₁ G₃ R₂ S",
   "time_of_day": "Morning",
-  "character": "Gourimanohari is a raga that exudes grace and charm. Its structure conveys a sense of serenity, making it suitable for compositions that are melodious and devotional in nature.",
-  "associated_deity_emotion": "Gourimanohari is often associated with Goddess Durga, symbolizing grace and strength. It evokes feelings of devotion and calm reverence.",
+  "character": "Gourimanohari is a raga known for its graceful, charming, and serene qualities. It exudes elegance and calm, making it suitable for compositions that are both melodious and devotional. The raga’s structure emphasizes a smooth flow of notes, creating an atmosphere of peace and reverence, ideal for morning performances.",
+  "associated_deity_emotion": "Gourimanohari is associated with Goddess Durga, who embodies grace, power, and strength. The raga evokes feelings of devotion, tranquility, and calm reverence, inspiring a connection to the divine feminine. It emphasizes spiritual peace and devotion to the goddess, making it a suitable raga for invoking divine blessings.",
+  "musical_structure": "Gourimanohari is a Sampurna raga with seven notes in both ascent and descent. It is characterized by the use of R₂ (Chatusruti Rishabham) and D₂ (Antara Dhaivatam), which add grace and elegance to the raga. The smooth transitions and balanced nature of the raga make it well-suited for devotional compositions and meditative explorations.",
   "popular_compositions": [
     "Rama Ninnu Namminanu - Tyagaraja",
     "Kamalambike - Muthuswami Dikshitar",
     "Gourimanohara - Papanasam Sivan"
   ],
-  "history": "Gourimanohari is the 23rd melakarta raga in the 72 melakarta system. Its versatility and elegance have made it a popular choice for composers and performers alike.",
-  "cultural_significance": "Gourimanohari is often used in both devotional and concert settings. Its graceful nature allows it to appeal to audiences while retaining a sense of classical depth."
+  "history": "Gourimanohari is the 23rd melakarta raga in the 72 melakarta system. Its graceful and versatile nature has made it a favorite for composers, particularly in compositions that emphasize devotional themes. The raga’s melodic elegance has made it a key feature in both classical and devotional music.",
+  "cultural_significance": "Gourimanohari is often performed in both devotional and concert settings. Its graceful character allows it to appeal to audiences while retaining a sense of classical depth. The raga is particularly revered for its ability to convey both devotion and serenity, making it suitable for invoking blessings from Goddess Durga and creating a peaceful atmosphere."
 },
 {
   "name": "Mararanjani",
   "arohana": "S R₂ G₃ M₂ P D₁ N₃ S",
   "avarohana": "S N₃ D₁ P M₂ G₃ R₂ S",
   "time_of_day": "Evening",
-  "character": "Mararanjani is a raga that conveys a mix of poignancy and elegance. Its prati madhyamam (M₂) adds a unique, ethereal quality, making it ideal for compositions that explore deep emotions.",
-  "associated_deity_emotion": "Mararanjani is associated with Lord Krishna, symbolizing playfulness tempered with introspection. It evokes feelings of devotion and emotional connection.",
+  "character": "Mararanjani is a raga that blends poignancy with elegance. Its distinctive use of Prati Madhyamam (M₂) creates a soft, ethereal quality, giving the raga a sense of emotional depth. It is ideal for compositions that explore complex emotional themes, invoking both introspection and devotional feelings.",
+  "associated_deity_emotion": "Mararanjani is associated with Lord Krishna, who represents divine playfulness and compassion. The raga conveys the emotional depth of Krishna's divine love and playful nature, evoking feelings of devotion and longing. It is often linked to themes of divine grace and emotional connection with the deity.",
+  "musical_structure": "Mararanjani is a Sampurna raga, utilizing seven notes in both ascent and descent. The use of M₂ (Prati Madhyamam) adds a unique tone, creating an ethereal and delicate feel. The raga’s structure allows for both fast-paced and meditative compositions, with its melancholic beauty being particularly suited to evening performances.",
   "popular_compositions": [
-    "Mararanjani Tillana - Swathi Thirunal"
+    "Mararanjani Tillana - Swathi Thirunal",
+    "Mararanjani Varnam - Papanasam Sivan",
+    "Govinda Gopala - Tyagaraja"
   ],
-  "history": "Mararanjani is the 25th melakarta raga in the 72 melakarta system. Its distinctive melodic structure has made it a favorite for exploring emotional and thematic compositions.",
-  "cultural_significance": "Mararanjani is appreciated for its ability to convey complex emotions. It is frequ"
+  "history": "Mararanjani is the 25th melakarta raga in the 72 melakarta system. It is known for its unique melodic structure, which blends emotional poignancy with elegance. This raga has become a favorite for compositions that explore deep feelings of devotion and longing, often performed in the evening.",
+  "cultural_significance": "Mararanjani is appreciated for its ability to convey complex emotions. It is often performed in concerts and devotional settings, where its emotional depth allows the performer to connect with the audience on a profound level. The raga’s association with Lord Krishna makes it a popular choice for expressing divine love and devotion."
 },
 {
   "name": "Varunapriya",
