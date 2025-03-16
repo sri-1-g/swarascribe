@@ -116,7 +116,7 @@ raags = [
   ],
   'history': 'Tanarupi was classified as the 58th Melakarta raga by Venkatamakhi in the 17th century as part of the 72 Melakarta system. Despite its theoretical importance, it is not as widely used in contemporary Carnatic music as other Melakartas. Nevertheless, it is highly respected for its purity and simplicity, and it has inspired several janya ragas (derived ragas). While it is not frequently performed in concert halls, its serene nature makes it an essential raga for understanding the early evening mood and for training musicians in the subtlety of Melakarta ragas.',
   'cultural_significance': 'Tanarupi holds an esteemed position in Carnatic music due to its deep, meditative quality. It is particularly revered for its association with the late evening, a time often set aside for more introspective and devotional music. Though not commonly heard in performances, its place in the foundational study of Melakarta ragas is undeniable. The simplicity of its scale, combined with its deep emotional connection to Lord Shiva, makes it an important raga for meditation and spiritual reflection. It is believed to induce peace and contemplation, making it particularly suited for settings that call for devotion, prayer, and reflection, especially during temple and ritualistic music.'
- }
+ },
 
  {
     'name': 'Hanumatodi',
