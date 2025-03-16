@@ -102,6 +102,23 @@ raags = [
     'cultural_significance': 'Senavati is widely regarded for its spiritual and emotional depth. It is often performed in temple settings, particularly during religious ceremonies and festivals. The raga’s association with Lord Shiva and its calm yet grand nature makes it a popular choice for invoking a sense of inner peace and spiritual connection during worship and meditation.'
  },
  {
+  'name': 'Tanarupi',
+  'arohana': 'S R₂ G₂ M₁ P D₂ N₁ S',
+  'avarohana': 'S N₁ D₂ P M₁ G₂ R₂ S',
+  'time_of_day': 'Late Evening',
+  'character': 'Tanarupi conveys a mood of devotion and introspection, with a sense of calm and tranquility. The raga’s melodic structure, featuring the use of Shuddha Rishabham (R₂) and Shuddha Madhyamam (M₁), produces a sense of solemnity and reverence. The distinct use of Shuddha Dhaivatam (D₂) and Nishadham (N₁) further enhances the raga’s contemplative nature, making it both majestic and meditative. It evokes a serene, reflective atmosphere, making it ideal for evening renditions.',
+  'associated_deity_emotion': 'Tanarupi is traditionally associated with Lord Shiva and is believed to invoke emotions of devotion, reverence, and deep introspection. It is said to connect the listener with the divine, promoting a heightened sense of spirituality and mindfulness. The raga is often chosen for performances during the late evening, a time that complements its reflective mood and invokes a sense of tranquility, ideal for spiritual gatherings and temple settings.',
+  'musical_structure': 'Tanarupi follows the Sampurna scale, with seven notes in both the ascending (arohana) and descending (avarohana) movements. The raga’s structure is simple and direct, without any complex vakra (zigzag) patterns, making it easy to grasp for both novice and seasoned musicians. The notes R₂ and G₂, combined with M₁ and D₂, create a linear, flowing movement, maintaining clarity and purity in its execution. While there are no prominent gamakas (ornamentations) or intricate jantavari (note repetitions), the raga relies on smooth, straightforward execution of the notes, which enhances its meditative quality.',
+  'popular_compositions': [
+    'Tanarupiya - Muthuswami Dikshitar',
+    'Shiva Shiva - Syama Sastri',
+    'Rama Rama - Papanasam Sivan'
+  ],
+  'history': 'Tanarupi was classified as the 58th Melakarta raga by Venkatamakhi in the 17th century as part of the 72 Melakarta system. Despite its theoretical importance, it is not as widely used in contemporary Carnatic music as other Melakartas. Nevertheless, it is highly respected for its purity and simplicity, and it has inspired several janya ragas (derived ragas). While it is not frequently performed in concert halls, its serene nature makes it an essential raga for understanding the early evening mood and for training musicians in the subtlety of Melakarta ragas.',
+  'cultural_significance': 'Tanarupi holds an esteemed position in Carnatic music due to its deep, meditative quality. It is particularly revered for its association with the late evening, a time often set aside for more introspective and devotional music. Though not commonly heard in performances, its place in the foundational study of Melakarta ragas is undeniable. The simplicity of its scale, combined with its deep emotional connection to Lord Shiva, makes it an important raga for meditation and spiritual reflection. It is believed to induce peace and contemplation, making it particularly suited for settings that call for devotion, prayer, and reflection, especially during temple and ritualistic music.'
+ }
+
+ {
     'name': 'Hanumatodi',
     'arohana': 'S R₁ G₂ M₁ P D₁ N₂ Ṡ',
     'avarohana': 'Ṡ N₂ D₁ P M₁ G₂ R₁ S',
