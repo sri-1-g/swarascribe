@@ -70,7 +70,7 @@ def main():
             in recordings, or simply music enthusiasts curious about the vast world of Carnatic music. It can also be helpful for teachers and researchers who want to explore ragas more deeply.
             Whether you're practicing or just exploring, this tool can enhance your learning and help you engage with Carnatic music in a new way.
         """)
-        st.write("\n## General Carnatic Music FAQs")
+    st.write("\n## General Carnatic Music FAQs")
 
     with st.expander("What is Carnatic music?"):
         st.write("""
