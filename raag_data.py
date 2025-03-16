@@ -26,7 +26,7 @@ raags = [
   'popular_compositions': [
     'Shanmukhapriya - Muthuswami Dikshitar',
     'Subramanyaya Namah - Papanasam Sivan',
-    'Shanmukhapriya Varnam - Kuppayah’
+    'Shanmukhapriya Varnam - Kuppayah'
   ],
   'history': 'Shanmukhapriya is one of the 72 Melakarta ragas and was classified by the musicologist Venkatamakhi in his system of ragas. As the 6th Melakarta raga, it plays a significant role in the foundation of Carnatic music theory. Its melodic purity and emotional depth have made it an important raga in the early morning concert repertoire. Despite not being as widely popular in contemporary times, Shanmukhapriya remains a highly respected raga, especially for its association with devotional themes and its clear, unembellished melodic structure.',
   'cultural_significance': 'Shanmukhapriya holds a revered place in the Carnatic tradition, especially for its association with early morning concerts and devotional music. The raga is commonly performed in temple settings, often used to invoke the blessings of Lord Subrahmanya. Its pure melodic form and emotional balance make it a key raga for understanding the essence of Carnatic music and for students learning the Melakarta system. The soothing nature of Shanmukhapriya, combined with its devotional significance, makes it ideal for performances aimed at spiritual upliftment, prayer, and meditation. It is considered to have a calming influence, promoting peace and devotion among listeners.'
