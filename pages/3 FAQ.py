@@ -4,7 +4,7 @@ st.html(
     """
 <style>
 .st-emotion-cache-9s49fs, .st-emotion-cache-a6n1w7 {
-    color: wheat !important;
+    color: #fad07d !important;
 }
 </style>
 """
