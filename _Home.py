@@ -1,17 +1,8 @@
 import streamlit as st
 
-st.set_page_config(layout="wide")
-st.html(
-    """
-<style>
-.st-emotion-cache-9s49fs, .st-emotion-cache-a6n1w7 {
-    color: wheat !important;
-}
-</style>
-"""
-)
 
-st.sidebar.image("swara.png")
+st.set_page_config(layout="wide")
+st.sidebar.image("swara.png", use_container_width=True)
 st.markdown("""
 <style>
 
@@ -61,7 +52,8 @@ st.markdown("<h2 style=' color: ""#fad07d"";'>Introdution to Carnatic Music</h2>
 st.markdown("""<hr style="height:4px;border:none;color:#fad07d;background-color:#fad07d;" /> """, unsafe_allow_html=True)
 c, c1 = st.columns(2)
 with c:
-    st.write("Carnatic music is a classical tradition from South India, characterized by its complex melodies and rhythms. It features vocal performances, often accompanied by instruments like the violin and mridangam. With a strong emphasis on improvisation and expression, Carnatic music reflects deep cultural and spiritual roots. It invites listeners to explore a rich tapestry of sound and emotion. Being able to appriciate Carnatic music is no easy feat. It takes time and constant listening to develop a liking for such heavy rich music.")
+    st.write("Carnatic music, one of the two main traditions of Indian classical music, is rooted in South India and is know for its vocal centric compositions and spritual depth. Vocalists are accompanied by a variety of instruments such as the violin, mridangam, and morsing. With a strong emphasis on improvisation and expression, Carnatic music reflects deep cultural and spiritual roots. It invites listeners to explore a rich tapestry of sound and emotion. Appreciating carnatic music is no easy feat; it requires time and consistent listening to develop an affinity for this deeply rich artform.")
+    st.write("Carnatic music traces its origins to ancient Hindu traditions and Vedic chants, evolving over centuries with influences from both temple rituals and royal patronage. It flourished in the courts of South Indian kingdoms, particularly under the Vijayanagara Empire and later the Maratha rulers of Thanjavur, where musicians received royal support to refine and perform their works. Temples also played a crucial role, serving as cultural hubs where devotional compositions were created and performed as offerings to deities. In the 16th century, Purandara Dasa, often called the 'Father of Carnatic Music', systematized its teaching methods, laying the foundation for its structured learning. Passed down through the guru-shishya tradition, Carnatic music has retained its spiritual depth and artistic sophistication while continuing to evolve in modern times.")
 with c1:
     st.image("https://www.bella-entertainment.com/wp-content/uploads/2023/01/monis-yousafzai-QuuaCzjXOYk-unsplash.jpg", width=500)
 
