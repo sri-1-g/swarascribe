@@ -24,9 +24,7 @@ def main():
 
     with st.expander("What types of audio files are supported?"):
         st.write("""
-            Our tool supports three common audio formats: MP3, WAV, and FLAC. MP3 is widely used for its smaller file size, but WAV and FLAC provide higher-quality, 
-            uncompressed audio. WAV files are ideal for those who want pure, unaltered sound, and FLAC files, while compressed, still retain lossless quality, which is great for 
-            preserving every detail of the performance. No matter which format you choose, the tool can process them effectively.
+            Our tool supports two common audio formats: MP3 and WAV. MP3 is widely used due to its smaller file size, making it convenient for storage and sharing. WAV, on the other hand, provides high-quality, uncompressed audio, making it ideal for those who prioritize sound fidelity. Both formats are compatible with our tool, ensuring accurate processing and transcription.
         """)
 
     with st.expander("Is the detection 100% accurate?"):
