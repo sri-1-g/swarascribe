@@ -15,6 +15,11 @@ col1, col2, col3 = st.columns(3)
 with col2:
     st.image("upload.png")
 uploaded_file = st.file_uploader("Choose a file")
+audio_value = st.audio_input("Record a voice message")
+
+if audio_value:
+    st.audio(audio_value)
+st.divider()
 if st.button("Analyze"):
     prediction = predict_audio_class(uploaded_file)
     if prediction=="Shankharabharanam":
