@@ -34,7 +34,7 @@ set_png_as_page_bg('treclef.png')
 col1, col2, col3 = st.columns(3)
 
 with col2:
-    st.image("aboutme.png")
+    st.image("aboutme.png" width=100 height=200)
 
 col3,col4= st.columns(2)
 
