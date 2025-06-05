@@ -21,7 +21,7 @@ audio_value = st.audio_input("Record a voice message")
 if audio_value:
     st.audio(audio_value)
 st.divider()
-if st.button("Analyze"):
+if st.button("Analyse"):
     prediction = predict_audio_class(uploaded_file)
     if prediction=="Shankharabharanam":
             
