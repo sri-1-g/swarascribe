@@ -14,14 +14,14 @@ st.sidebar.image("swara.png")
 col1, col2, col3 = st.columns(3)
 with col2:
     st.image("upload.png")
-st.write("Currently, the AI can analyse the following ragams: Kharaharapriya, Shankarabharanam, Todi, Bhairavi, and Kalyani. Don't worry, more are to come!")
+st.write("Currently, the AI can analyze the following ragams: Kharaharapriya, Shankarabharanam, Todi, Bhairavi, and Kalyani. Don't worry, more are to come!")
 uploaded_file = st.file_uploader("Choose a file")
 audio_value = st.audio_input("Record a voice message")
 
 if audio_value:
     st.audio(audio_value)
 st.divider()
-if st.button("Analyse"):
+if st.button("Analyze"):
     prediction = predict_audio_class(uploaded_file)
     if prediction=="Shankharabharanam":
             
