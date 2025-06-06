@@ -16,13 +16,14 @@ with col2:
     st.image("upload.png")
 st.write("Currently, the AI can analyze the following ragams: Kharaharapriya, Shankarabharanam, Todi, Bhairavi, and Kalyani. Don't worry, more are to come!")
 uploaded_file = st.file_uploader("Choose a file")
+st.divider()
 audio_value = st.audio_input("Record a voice message")
 
-if audio_value:
-    st.audio(audio_value)
-st.divider()
 if st.button("Analyze"):
-    prediction = predict_audio_class(uploaded_file)
+    if uploaded_file:
+        prediction = predict_audio_class(uploaded_file)
+    elif audio_value:
+        prediction = predict_audio_class(audio_value)
     if prediction=="Shankharabharanam":
             
         hi1, hi2 = st.columns(2)
