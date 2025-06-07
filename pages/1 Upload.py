@@ -21,9 +21,9 @@ audio_value = st.audio_input("Record a voice message")
 
 if st.button("Analyze"):
     if uploaded_file:
-        prediction = predict_audio_class(uploaded_file)
+        prediction = predict_audio_class(uploaded_file, is_widget_data=False)
     elif audio_value:
-        prediction = predict_audio_class(audio_value)
+        prediction = predict_audio_class(audio_value, is_widget_data=True)
     if prediction=="Shankharabharanam":
             
         hi1, hi2 = st.columns(2)
