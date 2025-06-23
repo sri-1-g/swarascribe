@@ -272,21 +272,6 @@ if st.button("Analyze"):
             - **N₂** (Kaishiki Nishadam)
             """)
     
-            # Title of the page
-            st.title("Janya Ragas of Bhairavi")
-    
-            # Display text with bullet points and emojis
-            st.markdown("""
-            Bhairavi has given rise to numerous Janya (derived) ragas, each showcasing its emotive beauty. 
-            Some popular Janya ragas include:
-            - 🎶 **Manji**
-            - 🎶 **Mukhari**
-            - 🎶 **Huseni**
-            - 🎶 **Owdava Bhairavi**
-            - 🎶 **Sindhubhairavi**
-    
-            These ragas highlight Bhairavi's adaptability and emotional depth.
-            """)
     
             with st.form("my_form"):
                 st.write("Feedback - Was I Right?")
