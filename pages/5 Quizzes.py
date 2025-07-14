@@ -15,53 +15,55 @@ quiz_type = st.radio(
         "4. Multiple Choice - Raga Facts"
     ]
 )
-# Quiz 1: Guess the Raga from Audio
+
+# ---------- Quiz 1: Guess the Raga from Audio ----------
 if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
     st.header("🎧 Guess the Raga from Arohanam and Avarohanam")
     st.write("Listen to the audio and select the correct raga.")
 
-quiz_data = [
-    {
-        "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
-        "answer": "Mohanam",
-        "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
-    },
-    {
-        "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
-        "answer": "Kalyani",
-        "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
-    }
-]
+    quiz_data_1 = [
+        {
+            "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
+            "answer": "Mohanam",
+            "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
+        },
+        {
+            "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
+            "answer": "Kalyani",
+            "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
+        }
+    ]
 
-# Choose question only once
-if "current_question" not in st.session_state:
-    st.session_state.current_question = random.choice(quiz_data)
+    # Init session state variables for Quiz 1
+    if "current_question_1" not in st.session_state:
+        st.session_state.current_question_1 = random.choice(quiz_data_1)
+        st.session_state.submitted_1 = False
 
-q = st.session_state.current_question
+    q1 = st.session_state.current_question_1
 
-# Display the current question
-st.audio(q["audio_path"])
-user_answer = st.radio("Which raga is this?", q["options"], key="user_response")
+    st.audio(q1["audio_path"])
+    user_answer_1 = st.radio("Which raga is this?", q1["options"], key="user_response_1")
 
-# Submit button
-if st.button("Submit Answer"):
-    if user_answer == q["answer"]:
-        st.success("✅ Correct!")
-    else:
-        st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
+    if st.button("Submit Answer", key="submit_1") and not st.session_state.submitted_1:
+        if user_answer_1 == q1["answer"]:
+            st.success("✅ Correct!")
+        else:
+            st.error(f"❌ Incorrect. The correct answer is **{q1['answer']}**.")
+        st.session_state.submitted_1 = True
 
-    # Optionally allow user to try another question
-    if st.button("Try Another"):
-        st.session_state.current_question = random.choice(quiz_data)
-        st.experimental_rerun()
+    if st.session_state.submitted_1:
+        if st.button("Try Another", key="try_another_1"):
+            st.session_state.current_question_1 = random.choice(quiz_data_1)
+            st.session_state.submitted_1 = False
+            st.experimental_rerun()
 
 
-# Quiz 4
-if quiz_type == "4. Multiple Choice - Raga Facts":
+# ---------- Quiz 4: Multiple Choice - Raga Facts ----------
+elif quiz_type == "4. Multiple Choice - Raga Facts":
     st.header("📚 Raga Trivia Quiz")
     st.write("Test your knowledge! Pick the correct answer and click Submit. Then try another question.")
 
-    quiz_data = [
+    quiz_data_4 = [
         {
             "question": "Which Melakarta number is Kalyani?",
             "answer": "65",
@@ -109,28 +111,34 @@ if quiz_type == "4. Multiple Choice - Raga Facts":
         }
     ]
 
-    if "trivia_question" not in st.session_state:
-        st.session_state.trivia_question = random.choice(quiz_data)
-        st.session_state.trivia_submitted = False
-        st.session_state.trivia_feedback = ""
+    # Init session state variables for Quiz 4
+    if "current_question_4" not in st.session_state:
+        st.session_state.current_question_4 = random.choice(quiz_data_4)
+        st.session_state.submitted_4 = False
+        st.session_state.feedback_4 = ""
 
-    q = st.session_state.trivia_question
+    q4 = st.session_state.current_question_4
 
-    st.write(f"**Question:** {q['question']}")
-    user_answer = st.radio("Choose your answer:", q["options"], key="trivia_answer")
+    st.write(f"**Question:** {q4['question']}")
+    user_answer_4 = st.radio("Choose your answer:", q4["options"], key="user_response_4")
 
-    if st.button("Submit Answer") and not st.session_state.trivia_submitted:
-        if user_answer == q["answer"]:
-            st.session_state.trivia_feedback = "✅ Correct!"
+    if st.button("Submit Answer", key="submit_4") and not st.session_state.submitted_4:
+        if user_answer_4 == q4["answer"]:
+            st.session_state.feedback_4 = "✅ Correct!"
         else:
-            st.session_state.trivia_feedback = f"❌ Incorrect. The correct answer is {q['answer']}."
-        st.session_state.trivia_submitted = True
+            st.session_state.feedback_4 = f"❌ Incorrect. The correct answer is {q4['answer']}."
+        st.session_state.submitted_4 = True
 
-    if st.session_state.trivia_submitted:
-        st.write(st.session_state.trivia_feedback)
+    if st.session_state.submitted_4:
+        st.write(st.session_state.feedback_4)
 
-    if st.button("Try Another One"):
-        st.session_state.trivia_question = random.choice(quiz_data)
-        st.session_state.trivia_submitted = False
-        st.session_state.trivia_feedback = ""
-        st.experimental_rerun()
+    if st.session_state.submitted_4:
+        if st.button("Try Another One", key="try_another_4"):
+            st.session_state.current_question_4 = random.choice(quiz_data_4)
+            st.session_state.submitted_4 = False
+            st.session_state.feedback_4 = ""
+            st.experimental_rerun()
+
+
+# Optionally: you can add skeleton placeholders for quizzes 2 and 3 here
+
