@@ -15,3 +15,29 @@ quiz_type = st.radio(
         "4. Multiple Choice - Raga Facts"
     ]
 )
+# Quiz 1: Guess the Raga from Audio
+if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
+    st.header("🎧 Guess the Raga from Arohanam and Avarohanam")
+    st.write("Listen to the audio and select the correct raga.")
+
+    quiz_data = [
+        {
+            "audio_path": "audio/mohanam_ar_avo.mp3",
+            "answer": "Mohanam",
+            "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
+        },
+        {
+            "audio_path": "audio/kalyani_ar_avo.mp3",
+            "answer": "Kalyani",
+            "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
+        }
+    ]
+
+    q = random.choice(quiz_data)
+    st.audio(q["audio_path"])
+    user_answer = st.radio("Which raga is this?", q["options"])
+    if st.button("Submit Answer"):
+        if user_answer == q["answer"]:
+            st.success("✅ Correct!")
+        else:
+            st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
