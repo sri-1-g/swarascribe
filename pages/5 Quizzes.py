@@ -22,48 +22,50 @@ if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
 
 quiz_data = [
     {
+        "id": 1,
         "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
         "answer": "Mohanam",
         "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
     },
     {
+        "id": 2,
         "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
         "answer": "Kalyani",
         "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
     }
 ]
 
-# Pick a random question and make sure it changes when needed
-def get_new_question(exclude=None):
-    available = [q for q in quiz_data if q != exclude]
-    return random.choice(available) if available else exclude
-
 # Initialize session state
-if "current_question" not in st.session_state:
-    st.session_state.current_question = random.choice(quiz_data)
-if "show_result" not in st.session_state:
-    st.session_state.show_result = False
+if "question_id" not in st.session_state:
+    st.session_state.question_id = random.choice([q["id"] for q in quiz_data])
+if "submitted" not in st.session_state:
+    st.session_state.submitted = False
 
-q = st.session_state.current_question
+# Get current question by ID
+current_question = next(q for q in quiz_data if q["id"] == st.session_state.question_id)
 
-# Show the question
-st.audio(q["audio_path"])
-user_answer = st.radio("Which raga is this?", q["options"], key="user_answer")
+# Show question
+st.audio(current_question["audio_path"])
+user_answer = st.radio("Which raga is this?", current_question["options"], key="user_answer")
 
-# Submit button
+# Submit Answer
 if st.button("Submit Answer"):
-    st.session_state.show_result = True
+    st.session_state.submitted = True
 
-# Show result only after clicking submit
-if st.session_state.show_result:
-    if user_answer == q["answer"]:
+if st.session_state.submitted:
+    if user_answer == current_question["answer"]:
         st.success("✅ Correct!")
     else:
-        st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
+        st.error(f"❌ Incorrect. The correct answer is **{current_question['answer']}**.")
 
-# Try another question
+# Try Another
 if st.button("Try Another"):
-    st.session_state.current_question = get_new_question(exclude=q)
-    st.session_state.show_result = False
-    st.session_state.user_answer = None  # Reset radio button
+    # Choose a new question ID that's different
+    new_id = st.session_state.question_id
+    while new_id == st.session_state.question_id:
+        new_id = random.choice([q["id"] for q in quiz_data])
+    
+    st.session_state.question_id = new_id
+    st.session_state.submitted = False
+    st.session_state.user_answer = None  # Reset the radio button
     st.experimental_rerun()
