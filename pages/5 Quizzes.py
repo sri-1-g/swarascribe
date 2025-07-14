@@ -18,7 +18,7 @@ quiz_type = st.radio(
 # Quiz 1: Guess the Raga from Audio
 if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
     st.header("🎧 Guess the Raga from Arohanam and Avarohanam")
-    st.write("Listen to the audio and select the correct raga.")
+    st.write("Listen to each audio clip and select the correct raga.")
 
     quiz_data = [
         {
@@ -33,11 +33,23 @@ if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
         }
     ]
 
-    q = random.choice(quiz_data)
-    st.audio(q["audio_path"])
-    user_answer = st.radio("Which raga is this?", q["options"])
-    if st.button("Submit Answer"):
-        if user_answer == q["answer"]:
-            st.success("✅ Correct!")
-        else:
-            st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
+    # Store responses
+    responses = []
+
+    for i, q in enumerate(quiz_data):
+        st.subheader(f"Question {i + 1}")
+        st.audio(q["audio_path"])
+        user_answer = st.radio(
+            f"Which raga is this? (Q{i+1})", q["options"], key=f"audio_q{i}"
+        )
+        responses.append((user_answer, q["answer"]))
+
+    if st.button("Submit All Answers"):
+        score = 0
+        for i, (user_answer, correct_answer) in enumerate(responses):
+            if user_answer == correct_answer:
+                st.success(f"✅ Question {i+1}: Correct!")
+                score += 1
+            else:
+                st.error(f"❌ Question {i+1}: Incorrect. Correct answer: **{correct_answer}**.")
+        st.info(f"Your total score: {score} / {len(responses)}")
