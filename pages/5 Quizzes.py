@@ -3,7 +3,7 @@ import random
 
 st.set_page_config(page_title="Carnatic Raga Quizzes", layout="centered")
 
-st.title("🎵 Carnatic Music Raga Quizzes")
+st.image("quizzes.png")
 st.write("Test your knowledge of Carnatic ragas with different types of quizzes!")
 
 quiz_type = st.radio(
