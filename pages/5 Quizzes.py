@@ -33,13 +33,13 @@ quiz_data = [
     }
 ]
 
-# Choose question only once
+# Choose a question once
 if "current_question" not in st.session_state:
     st.session_state.current_question = random.choice(quiz_data)
 
 q = st.session_state.current_question
 
-# Display the current question
+# Display question
 st.audio(q["audio_path"])
 user_answer = st.radio("Which raga is this?", q["options"], key="user_response")
 
@@ -50,7 +50,8 @@ if st.button("Submit Answer"):
     else:
         st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
 
-    # Optionally allow user to try another question
-    if st.button("Try Another"):
-        st.session_state.current_question = random.choice(quiz_data)
-        st.experimental_rerun()
+# Try another (now outside the submit block, so it always appears)
+if st.button("Try Another"):
+    st.session_state.current_question = random.choice(quiz_data)
+    st.session_state.user_response = None  # reset selection
+    st.experimental_rerun()
