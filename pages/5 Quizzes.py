@@ -68,12 +68,18 @@ if st.session_state.quiz_step == 0:
         key="answer_radio"
     )
     if st.button("Submit Answer"):
-        if st.session_state.user_answer is None:
-            st.warning("Please select an answer before submitting.")
-        else:
-            st.session_state.quiz_step = 1
-            st.experimental_rerun()
+    if st.session_state.user_answer is None:
+        st.warning("Please select an answer before submitting.")
+    else:
+        st.session_state.quiz_step = 1
+        st.experimental_rerun()
+        return  # stop execution after rerun
 
+elif st.session_state.quiz_step == 1:
+    if st.button("Try Another"):
+        pick_new_question()
+        st.experimental_rerun()
+        return  # stop execution after rerun
 elif st.session_state.quiz_step == 1:
     # Show result
     if st.session_state.user_answer == q["answer"]:
