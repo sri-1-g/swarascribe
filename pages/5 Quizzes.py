@@ -27,7 +27,7 @@ if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
             "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
         },
         {
-            "audio_path": "audio/kalyani_ar_avo.mp3",
+            "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
             "answer": "Kalyani",
             "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
         }
