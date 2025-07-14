@@ -20,24 +20,37 @@ if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
     st.header("🎧 Guess the Raga from Arohanam and Avarohanam")
     st.write("Listen to the audio and select the correct raga.")
 
-    quiz_data = [
-        {
-            "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
-            "answer": "Mohanam",
-            "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
-        },
-        {
-            "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
-            "answer": "Kalyani",
-            "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
-        }
-    ]
+quiz_data = [
+    {
+        "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
+        "answer": "Mohanam",
+        "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
+    },
+    {
+        "audio_path": "Raga Kalyani_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
+        "answer": "Kalyani",
+        "options": ["Shankarabharanam", "Kalyani", "Bhairavi", "Hamsadhwani"]
+    }
+]
 
-    q = random.choice(quiz_data)
-    st.audio(q["audio_path"])
-    user_answer = st.radio("Which raga is this?", q["options"])
-    if st.button("Submit Answer"):
-        if user_answer == q["answer"]:
-            st.success("✅ Correct!")
-        else:
-            st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
+# Choose question only once
+if "current_question" not in st.session_state:
+    st.session_state.current_question = random.choice(quiz_data)
+
+q = st.session_state.current_question
+
+# Display the current question
+st.audio(q["audio_path"])
+user_answer = st.radio("Which raga is this?", q["options"], key="user_response")
+
+# Submit button
+if st.button("Submit Answer"):
+    if user_answer == q["answer"]:
+        st.success("✅ Correct!")
+    else:
+        st.error(f"❌ Incorrect. The correct answer is **{q['answer']}**.")
+
+    # Optionally allow user to try another question
+    if st.button("Try Another"):
+        st.session_state.current_question = random.choice(quiz_data)
+        st.experimental_rerun()
