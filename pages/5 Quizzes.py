@@ -22,7 +22,7 @@ if quiz_type == "1. Guess the Raga from Aro/Avo Audio":
 
     quiz_data = [
         {
-            "audio_path": "audio/mohanam_ar_avo.mp3",
+            "audio_path": "Raga Mohanam_ Arohanam, Avarohanam and Alapana  Raga Surabhi.mp3",
             "answer": "Mohanam",
             "options": ["Mohanam", "Kalyani", "Todi", "Kharaharapriya"]
         },
