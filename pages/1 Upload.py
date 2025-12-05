@@ -19,7 +19,7 @@ col1, col2, col3 = st.columns(3)
 with col2:
     st.image("upload.png")
 
-st.write("Currently, the AI can analyze the following ragams: Kharaharapriya, Shankarabharanam, Khamboji, Bhairavi, and Kalyani. Don't worry, more are to come!")
+st.write("Currently, the AI can analyze the following ragams: Kanada, Saveri, and Mohanam. Don't worry, more are to come!")
 
 uploaded_file = st.file_uploader("Choose a file")
 st.divider()
