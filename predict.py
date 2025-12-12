@@ -147,11 +147,11 @@ def _temporary_audio_file(file_or_data, is_widget_data: bool) -> Iterator[Path]:
     else:
         raw_bytes = file_or_data.read()
         file_or_data.seek(0)
-        suffix = Path(getattr(file_or_data, "name", "upload.wav")).suffix or ".wav"
+        suffix = str(Path(getattr(file_or_data, "name", "upload.wav")).suffix) or ".wav"
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
         tmp.write(raw_bytes)
-        tmp_path = Path(tmp.name)
+        tmp_path = Path(str(tmp.name))
     try:
         yield tmp_path
     finally:
