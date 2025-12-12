@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 
 st.set_page_config(layout="wide")
-st.sidebar.image("swara.png", use_container_width=True)
+st.sidebar.image("swara.png", width='stretch')
 
 # Custom CSS to change sidebar font color
 st.markdown(

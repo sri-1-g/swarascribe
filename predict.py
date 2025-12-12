@@ -31,9 +31,9 @@ def _load_checkpoint() -> Dict:
     if not CHECKPOINT_PATH.exists():
         raise FileNotFoundError(f"Checkpoint not found at {CHECKPOINT_PATH}")
     try:
-        payload = torch.load(CHECKPOINT_PATH, map_location=DEVICE, weights_only=False)
+        payload = torch.load(str(CHECKPOINT_PATH), map_location=DEVICE, weights_only=False)
     except TypeError:
-        payload = torch.load(CHECKPOINT_PATH, map_location=DEVICE)
+        payload = torch.load(str(CHECKPOINT_PATH), map_location=DEVICE)
     required = {"model_state", "class_names", "metadata"}
     missing = required - payload.keys()
     if missing:
@@ -97,7 +97,7 @@ def _decode_with_ffmpeg(path: Path, target_sr: int) -> torch.Tensor:
 
 def _load_waveform(path: Path, sample_rate: int, clip_duration: float) -> torch.Tensor:
     try:
-        waveform, sr = torchaudio.load(path)
+        waveform, sr = torchaudio.load(str(path))
     except RuntimeError as exc:
         if path.suffix.lower() in AUDIO_EXTENSIONS:
             waveform = _decode_with_ffmpeg(path, sample_rate)
