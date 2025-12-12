@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import io
 import json
+import pickle
 import shutil
 import subprocess
+import sys
 import tempfile
 from contextlib import contextmanager
-from pathlib import Path
+from pathlib import Path, PosixPath, WindowsPath
 from typing import Dict, Iterator, Tuple
 
 import torch
@@ -27,13 +30,48 @@ _CLASS_NAMES: Tuple[str, ...] | None = None
 _METADATA: Dict[str, float | int] | None = None
 
 
+class PathUnpickler(pickle.Unpickler):
+    """Custom unpickler to handle WindowsPath/PosixPath cross-platform issues."""
+    
+    def find_class(self, module, name):
+        if module == "pathlib":
+            if name in ("WindowsPath", "PosixPath"):
+                # Return the appropriate Path class for the current platform
+                return Path
+        return super().find_class(module, name)
+
+
 def _load_checkpoint() -> Dict:
     if not CHECKPOINT_PATH.exists():
         raise FileNotFoundError(f"Checkpoint not found at {CHECKPOINT_PATH}")
+    
+    # Load with custom unpickler to handle cross-platform Path issues
     try:
-        payload = torch.load(str(CHECKPOINT_PATH), map_location=DEVICE, weights_only=False)
-    except TypeError:
-        payload = torch.load(str(CHECKPOINT_PATH), map_location=DEVICE)
+        with open(str(CHECKPOINT_PATH), "rb") as f:
+            buffer = io.BytesIO(f.read())
+            payload = torch.load(buffer, map_location=DEVICE, weights_only=False, pickle_module=pickle)
+    except Exception:
+        # Fallback: try with custom unpickler
+        try:
+            with open(str(CHECKPOINT_PATH), "rb") as f:
+                buffer = io.BytesIO(f.read())
+                # Use custom unpickler for the torch load
+                original_loads = pickle.loads
+                
+                def custom_loads(data):
+                    return PathUnpickler(io.BytesIO(data)).load()
+                
+                pickle.loads = custom_loads
+                try:
+                    payload = torch.load(buffer, map_location=DEVICE, weights_only=False)
+                finally:
+                    pickle.loads = original_loads
+        except TypeError:
+            # Older PyTorch version
+            with open(str(CHECKPOINT_PATH), "rb") as f:
+                buffer = io.BytesIO(f.read())
+                payload = torch.load(buffer, map_location=DEVICE)
+    
     required = {"model_state", "class_names", "metadata"}
     missing = required - payload.keys()
     if missing:
